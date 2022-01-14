@@ -1,17 +1,24 @@
 /* Styles for my website */
-* {
+/* Start CSS Reset  */
+*,
+*::before,
+*::after {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
 }
 
+img {
+  width: 100%;
+}
+/* END CSS Reset  */
+
 body {
-  background: #ddd;
+  background: #4a4e69;
 }
 
 header {
-  /* height: 200px; */
-  background: yellow;
+  background: #22223b;
   overflow: hidden;
   padding: 20px 0;
 }
@@ -24,6 +31,7 @@ header {
 
 #logo {
   float: left;
+  width: 130px;
 }
 
 nav ul {
@@ -32,13 +40,16 @@ nav ul {
 }
 
 nav li {
+  font-size: 1.7rem;
   float: left;
-  margin-left: 15px;
+  margin-top: 40px;
+  margin-left: 40px;
   list-style-type: none;
 }
 
 nav a {
   text-decoration: none;
+  color: #f2e9e4;
 }
 
 #wrapper {
@@ -47,28 +58,47 @@ nav a {
 }
 
 #hero {
-  height: 300px;
-  background: #f00;
+  overflow: hidden;
+  background: #9398cf;
   margin-bottom: 20px;
+  padding: 20px;
   clear: both;
+}
+
+img.profile {
+  float: right;
+  width: 150px;
+  border-radius: 30px;
+  margin-right: 60px;
 }
 
 main {
   width: 62%;
-  height: 400px;
-  background: lightblue;
+  background: #9398cf;
   float: left;
   margin-bottom: 20px;
 }
 
+h1,h2,h3,h4 {
+  margin: 16px 0;
+}
+section {
+  margin: 20px 10px;
+}
+
 aside {
   width: 35%;
-  height: 300px;
-  background: coral;
+  background: #9398cf;
   float: right;
+  padding: 5px 12px;
+}
+
+aside ul {
+  margin-left: 25px;
 }
 
 footer {
+  background: #22223b;
   border-top: 1px solid #666;
   height: 50px;
   clear: both;
@@ -78,6 +108,12 @@ footer {
 
 footer li {
   float: left;
-  margin-right: 30px;
+  font-size: 1.6rem;
+  margin-right: 40px;
   list-style-type: none;
+  color: #f2e9e4;
+}
+
+footer li a {
+  color: #f2e9e4;
 }

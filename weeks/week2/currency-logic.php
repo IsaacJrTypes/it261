@@ -8,16 +8,16 @@
 //We have 2000 canadian, rubles, etc
 
 $canadian_rate = 0.8;
-$canadian_usd = 2000 / $canadian_rate;
+$canadian_usd = 2000 * $canadian_rate;
 
 $rubles_rate = 0.013;
-$rubles_usd = 2000 / $rubles_rate;
+$rubles_usd = 2000 * $rubles_rate;
 
 $pounds_rate = 1.37;
-$pounds_usd = 2000 / $pounds_rate;
+$pounds_usd = 2000 * $pounds_rate;
 
 $yen_rate = 0.8;
-$yen_usd = 2000 / $yen_rate;
+$yen_usd = 2000 * $yen_rate;
 ?>
 <!DOCTYPE html>
 <html lang="en">
