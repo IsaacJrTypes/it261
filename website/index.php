@@ -84,10 +84,10 @@
         </ul>
         <h3>Week 2:</h3>
         <ul>
-          <li><a href="" title="">var.php</a></li>
-          <li><a href="" title="">currency-logic.php</a></li>
-          <li><a href="" title="">currency.php</a></li>
-          <li><a href="" title="">hereDoc.php</a></li>
+          <li><a href="../weeks/week2/var.php" title="">var.php</a></li>
+          <li><a href="../weeks/week2/currency-logic.php" title="">currency-logic.php</a></li>
+          <li><a href="../weeks/week2/currency.php" title="">currency.php</a></li>
+          <li><a href="../weeks/week2/hereDoc.php" title="">hereDoc.php</a></li>
         </ul>
         <h3>Week 3:</h3>
         <h3>Week 4:</h3>

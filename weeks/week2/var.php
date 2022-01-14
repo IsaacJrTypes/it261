@@ -30,8 +30,8 @@ echo br();
 $vehicle = 'Truck';
 $x = 20;
 $y = 30;
-//$z = $x * $y;
-echo 'results for line 34: ' . $z;
+$z = $x * $y;
+echo $z;
 //cicumference of a circle 2 pi r
 $pi = 3.14;
 $rad = 10;
@@ -59,3 +59,27 @@ $friendly_amount = number_format($amount, 2);
 echo $friendly_amount;
 echo br();
 echo '<p>I now have <b>$' . $friendly_amount . '</b> dollars!</p>';
+
+echo '<h1>Examples Using Concatenation Operator</h1>';
+echo br();
+$firstName = 'Isaac';
+$lastName = 'Jimenez';
+echo $firstName;
+echo br();
+echo $lastName;
+echo br();
+
+$name = 'Isaac ';
+$name .= 'Jimenez';
+echo $name;
+echo br();
+
+$x = 30;
+$y = 3;
+$z = $x / $y;
+echo $z;
+echo br();
+
+$x = 30;
+$x /= 3;
+echo $x;
