@@ -1,0 +1,83 @@
+/* Styles for my website */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: #ddd;
+}
+
+header {
+  /* height: 200px; */
+  background: yellow;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+#inner-header,
+#inner-footer {
+  margin: 0px auto;
+  max-width: 1200px;
+}
+
+#logo {
+  float: left;
+}
+
+nav ul {
+  float: right;
+  margin-top: 30px;
+}
+
+nav li {
+  float: left;
+  margin-left: 15px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+}
+
+#wrapper {
+  margin: 20px auto;
+  max-width: 1200px;
+}
+
+#hero {
+  height: 300px;
+  background: #f00;
+  margin-bottom: 20px;
+  clear: both;
+}
+
+main {
+  width: 62%;
+  height: 400px;
+  background: lightblue;
+  float: left;
+  margin-bottom: 20px;
+}
+
+aside {
+  width: 35%;
+  height: 300px;
+  background: coral;
+  float: right;
+}
+
+footer {
+  border-top: 1px solid #666;
+  height: 50px;
+  clear: both;
+  height: 50px;
+  line-height: 50px;
+}
+
+footer li {
+  float: left;
+  margin-right: 30px;
+  list-style-type: none;
+}

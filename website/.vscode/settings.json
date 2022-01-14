@@ -1,0 +1,7 @@
+{
+  "editor.defaultFormatter": "SimonSiefke.prettier-vscode",
+  "editor.formatOnSave": false,
+  "[css]": {
+    "editor.defaultFormatter": "SimonSiefke.prettier-vscode"
+  }
+}
