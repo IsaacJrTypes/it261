@@ -56,7 +56,7 @@
       <!-- End Hero -->
       <main>
         <section>
-          <h3>Week 1: Development Screenshots</h3>
+          <h3>Week 1: Development Environment Screenshots</h3>
           <h4>MAMP Screenshot</h4>
           <img
             src="images/setupScreenshot.jpg"
