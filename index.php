@@ -75,8 +75,8 @@
         <ul>
           <li>
             <a
-              href="https://github.com/IsaacJrTypes"
-              title="Link to Github Profile"
+              href="https://github.com/IsaacJrTypes" target="_blank" 
+              title="Opens Github profile in new tab"
             >
               GitHub Profile
             </a>
@@ -84,10 +84,10 @@
         </ul>
         <h3>Week 2:</h3>
         <ul>
-          <li><a href="../weeks/week2/var.php" title="">var.php</a></li>
-          <li><a href="../weeks/week2/currency-logic.php" title="">currency-logic.php</a></li>
-          <li><a href="../weeks/week2/currency.php" title="">currency.php</a></li>
-          <li><a href="../weeks/week2/hereDoc.php" title="">hereDoc.php</a></li>
+          <li><a href="weeks/week2/var.php" title="Link to var.php">var.php</a></li>
+          <li><a href="weeks/week2/currency-logic.php" title="Link to currency-logic.php">currency-logic.php</a></li>
+          <li><a href="weeks/week2/currency.php" title="Link to currency.php">currency.php</a></li>
+          <li><a href="weeks/week2/hereDoc.php" title="Link to hereDoc.php">hereDoc.php</a></li>
         </ul>
         <h3>Week 3:</h3>
         <h3>Week 4:</h3>
@@ -97,9 +97,9 @@
     <footer>
       <div id="inner-footer">
         <ul>
-          <li>Copyright &copy;</li>
+          <li>Copyright &copy; <?php echo date('Y'); ?> </li>
           <li>All Rights Reserved</li>
-          <li><a href="../index.php">Web Design by Isaac</a></li>
+          <li><a href="index.php">Web Design by Isaac</a></li>
           <li><a id="html-checker" href="#">HTML Validation</a></li>
           <li><a id="css-checker" href="#">CSS Validation</a></li>
         </ul>
