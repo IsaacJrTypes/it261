@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/styles.css" type="text/css" rel="stylesheet" />
-    <title>Home Page</title>
-  </head>
-  <body>
-    <header>
-      <div id="inner-header">
-        <h1 id="logo">
-          <a href="index.php">
-            <img src="images/php-logo.svg" alt="Php Logo" />
-          </a>
-        </h1>
-
-        <nav>
-          <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="daily.php">Daily</a></li>
-            <li><a href="project.php">Project</a></li>
-            <li><a href="contact.php">Contact</a></li>
-            <li><a href="gallery.php">Gallery</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- end inner header -->
-    </header>
+    <?php include('includes/header.php');?>
     <div id="wrapper">
       <div id="hero">
         <img
@@ -94,18 +64,4 @@
       </aside>
     </div>
     <!-- End wrapper -->
-    <footer>
-      <div id="inner-footer">
-        <ul>
-          <li>Copyright &copy; <?php echo date('Y'); ?> </li>
-          <li>All Rights Reserved</li>
-          <li><a href="index.php">Web Design by Isaac</a></li>
-          <li><a id="html-checker" href="#">HTML Validation</a></li>
-          <li><a id="css-checker" href="#">CSS Validation</a></li>
-        </ul>
-      </div>
-      <!--Inner Footer -->
-    </footer>
-    <script src="js/validator.js"></script>
-  </body>
-</html>
+    <?php include('includes/footer.php');?>
