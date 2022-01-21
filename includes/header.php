@@ -51,7 +51,7 @@ $nav['gallery.php'] = 'Gallery';
             <nav>
                 <ul>
                 <?php foreach ($nav as $key => $value) {
-                    echo '<li style="list-style-type:none;"><a style="text-decoration:none;"href="'.$key.'">'.$value.'</a></li>';
+                    echo '<li style="list-style-type:none;"><a style="text-decoration:none;" href="'.$key.'">'.$value.'</a></li>';
                 }?>
                 </ul>
             </nav>
