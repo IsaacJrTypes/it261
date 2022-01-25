@@ -12,12 +12,12 @@ switch(THIS_PAGE) {
         $body = 'daily inner';
 }
 
-$nav['index.php'] = 'Home';
-$nav['about.php'] = 'About';
-$nav['daily.php'] = 'Daily';
-$nav['project.php'] = 'Project';
-$nav['contact.php'] = 'Contact';
+$nav['daily.php'] = 'Switch';
+$nav['troubleshoot.php'] = 'Troubleshoot';
+$nav['calculator.php'] = 'Calculator';
+$nav['email.php'] = 'Email';
 $nav['gallery.php'] = 'Gallery';
+$nav['database.php'] = 'Database';
 
 date_default_timezone_set('America/Los_Angeles');//sets timezone
 //GLOBAL VARIABLE are capitallized and start with $_GET
