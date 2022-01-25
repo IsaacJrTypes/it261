@@ -60,6 +60,13 @@
           <li><a href="weeks/week2/hereDoc.php" title="Link to hereDoc.php">hereDoc.php</a></li>
         </ul>
         <h3>Week 3:</h3>
+        <ul>
+          <li><a href="weeks/week3/arrays.php" title="Link to arrays.php">arrays.php</a></li>
+    
+          <li><a href="weeks/week3/date.php" title="Link to date.php">date.php</a></li>
+          <li><a href="weeks/week3/if-else.php" title="Link to if-else.php">if-else.php</a></li>
+          <li><a href="weeks/week3/switch.php" title="Link to switch.php">switch.php</a></li>
+        </ul>
         <h3>Week 4:</h3>
       </aside>
     </div>
