@@ -66,6 +66,8 @@
           <li><a href="weeks/week3/date.php" title="Link to date.php">date.php</a></li>
           <li><a href="weeks/week3/if-else.php" title="Link to if-else.php">if-else.php</a></li>
           <li><a href="weeks/week3/switch.php" title="Link to switch.php">switch.php</a></li>
+          <li><a href="weeks/week3/index.php" title="Link to index.php">index.php</a></li>
+          <li><a href="weeks/week3/for-loop.php" title="Link to for-loop.php">for-loop.php</a></li>
         </ul>
         <h3>Week 4:</h3>
       </aside>

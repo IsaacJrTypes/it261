@@ -1,6 +1,7 @@
 <?php
 //arrays reminds me of a category, a category of fruit, names
 //navigation
+define('THIS_PAGE', basename($_SERVER['PHP_SELF']));
 
 $fruits = array(
     'bananas',
@@ -65,10 +66,35 @@ foreach ($nav as $key => $value) {//cannot index
 echo '<br>';
 
 ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .current {
+            color:red;
+        }
+    </style>
+</head>
+<body>
 <nav>
-<ul>
-<?php foreach ($nav as $key => $value) {
-    echo '<li style="list-style-type:none; color:red;"><a style="text-decoration:none;"href="'.$key.'">'.$value.'</a></li>';
-}?>
-</ul>
+    <ul>
+    <!-- Look at line 4
+        If we are on THIS_PAGE, we will be styling for this page
+        If THIS_PAGE == $key then add styles
+    -->
+    <?php foreach ($nav as $key => $value) {
+        if(THIS_PAGE == $key) {
+            echo '<li style="list"><a class="current" href="'.$key.'">'.$value.'</a></li>';
+        } else {
+            echo '<li><a style="text-decoration:none;"href="'.$key.'">'.$value.'</a></li>';
+        }
+       
+    }?>
+    </ul>
 </nav>
+</body>
+</html>
