@@ -1,8 +1,9 @@
-<?php include 'includes/header.php'; ?>
-<div id="wrapper">
-      <main class="<?php echo $divClass?>">
+<?php include '../includes/header.php'; 
+?>
+<div id="wrapper" class="<?php echo $class; ?>">
+      <main>
         <section>
-          <h2>Philosopher of The Day!</h2>
+          <h2>philosopher of The Day!</h2>
           <?php echo $philosoper;?>
           <img src="images/<?php echo $pic;?>" alt="<?php echo $alt;?>">
     <p><?php echo $content; ?>
@@ -25,4 +26,4 @@
        
       </aside>
     </div>
-<?php include 'includes/footer.php'; ?>
+<?php include '../includes/footer.php'; ?>

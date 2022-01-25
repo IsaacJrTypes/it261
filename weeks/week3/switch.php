@@ -113,7 +113,7 @@ switch($today) {
          background:DarkOrange;   
         }
         .coffee {
-         background:SaddleBrown;   
+         background:SaddleBrown; 
         }
         p {
             width:60ch;

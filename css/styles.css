@@ -57,6 +57,7 @@ nav a {
   max-width: 1000px;
 }
 
+
 #hero {
   overflow: hidden;
   background: #9398cf;
@@ -79,6 +80,33 @@ main {
   margin-bottom: 20px;
 }
 
+main.default {
+  background:#9398cf;   
+ }
+
+main.brown {
+  background:BurlyWood;   
+ }
+ main.darkbrown {
+  background:Chocolate;   
+ }
+ main.lightyellow {
+  background:Beige;   
+ }
+ main.lightgreen {
+  background:DarkSeaGreen;   
+ }
+ 
+ main.lightorange {
+  background:DarkOrange;   
+ }
+ main.coffee {
+  background:SaddleBrown; 
+ }
+ p {
+     width:60ch;
+ }
+
 h1,h2,h3,h4 {
   margin: 16px 0;
 }
@@ -86,10 +114,12 @@ section {
   margin: 20px 10px;
 }
 
+
 p {
   font-size: 18px;
   margin: 10px 0;
 }
+
 
 aside {
   width: 35%;
