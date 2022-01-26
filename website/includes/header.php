@@ -110,9 +110,14 @@ switch($today) {
 
             <nav>
                 <ul>
-                <?php foreach ($nav as $key => $value) {
-                    echo '<li style="list-style-type:none;"><a style="text-decoration:none;" href="'.$key.'">'.$value.'</a></li>';
-                }?>
+                
+                 <?php foreach ($nav as $key => $value) {
+                    if(THIS_PAGE == $key) {
+                      echo '<li><a class="current" href="'.$key.'">'.$value.'</a></li>';
+                    } else {
+                    echo '<li><a href="'.$key.'">'.$value.'</a></li>';
+                    }
+                    }?>
                 </ul>
             </nav>
         </div>
