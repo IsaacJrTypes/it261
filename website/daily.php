@@ -26,7 +26,7 @@
     </ul>
     <h3>Quote of The day</h3>
     <blockquote><p><?php echo $quote;?></p></blockquote>
-    <cite><p>-<?=$philosopher?></p></cite>
+    <cite>-<?=$philosopher?></cite>
       </aside>
     </div>
 <?php include 'includes/footer.php'; ?>

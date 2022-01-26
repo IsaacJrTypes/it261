@@ -27,10 +27,6 @@ if (isset($_GET['today'])) {
     $today = date('l');
 }
 
-function backgroundColor($color) { 
-    return 'background:'.$color.';';
-}
-
 //switch
 switch($today) {
     case 'Thursday': 

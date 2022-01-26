@@ -136,7 +136,9 @@ aside h3 {
 }
 
 cite {
+    display: block;
     text-align: right;
+    margin-right: 20px;
 }
 
 cite p {
