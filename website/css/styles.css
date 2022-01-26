@@ -1,0 +1,165 @@
+/* Styles for my website */
+/* Start CSS Reset  */
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+/* END CSS Reset  */
+
+body {
+  background: #4a4e69;
+}
+
+header {
+  background: #22223b;
+  overflow: hidden;
+  padding: 20px 0;
+}
+
+#inner-header,
+#inner-footer {
+  margin: 0px auto;
+  max-width: 1000px;
+}
+
+#logo {
+  float: left;
+  width: 130px;
+}
+
+nav ul {
+  float: right;
+  margin-top: 30px;
+}
+
+nav li {
+  font-size: 1.7rem;
+  float: left;
+  margin-top: 40px;
+  margin-left: 40px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f2e9e4;
+}
+
+#wrapper {
+  margin: 20px auto;
+  max-width: 1000px;
+}
+
+
+#hero {
+  overflow: hidden;
+  background: #9398cf;
+  margin-bottom: 20px;
+  padding: 20px;
+  clear: both;
+}
+
+img.profile {
+  float: right;
+  width: 150px;
+  border-radius: 15px;
+  margin: 12px 90px;
+}
+
+main {
+  width: 62%;
+  background: #9398cf;
+  float: left;
+  margin-bottom: 20px;
+}
+
+main.default {
+  background:#9398cf;   
+ }
+
+main.brown {
+  background:BurlyWood;   
+ }
+ main.darkbrown {
+  background:Chocolate;   
+ }
+ main.lightyellow {
+  background:Beige;   
+ }
+ main.lightgreen {
+  background:DarkSeaGreen;   
+ }
+ 
+ main.lightorange {
+  background:DarkOrange;   
+ }
+ main.coffee {
+  background:SaddleBrown; 
+ }
+ 
+
+h1,h2,h3,h4 {
+  margin: 16px 0;
+}
+section {
+  margin: 20px 10px;
+}
+
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+
+aside {
+  width: 35%;
+  background: #9398cf;
+  float: right;
+  padding: 5px 12px;
+}
+
+aside ul {
+  margin-left: 25px;
+}
+
+aside h3 {
+    margin-top:25px;
+    margin-bottom: 0;
+}
+
+cite {
+    text-align: right;
+}
+
+cite p {
+    margin-right: 30px;
+}
+
+footer {
+  background: #22223b;
+  border-top: 1px solid #666;
+  height: 50px;
+  clear: both;
+  height: 50px;
+  line-height: 50px;
+}
+
+footer li {
+  float: left;
+  font-size: 1.2rem;
+  margin-right: 40px;
+  list-style-type: none;
+  color: #f2e9e4;
+}
+
+footer li a {
+  color: #f2e9e4;
+}

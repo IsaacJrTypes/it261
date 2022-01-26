@@ -1,10 +1,11 @@
-<?php include '../includes/header.php'; 
+<?php include 'includes/header.php'; 
 ?>
-<div id="wrapper" class="<?php echo $class; ?>">
-      <main>
+<div id="wrapper" >
+      <main class="<?php echo $divClass;?>">
         <section>
-          <h2>philosopher of The Day!</h2>
-          <?php echo $philosoper;?>
+          <h2>Philosopher of The Day!</h2>
+          <h3><?php echo date('l');?>s we celebrate <?php echo $philosopher;?></h3>
+          
           <img src="images/<?php echo $pic;?>" alt="<?php echo $alt;?>">
     <p><?php echo $content; ?>
     </p>
@@ -23,7 +24,9 @@
         <li><a href="daily.php?today=Saturday">Saturday</a></li>
         <li><a href="daily.php?today=Sunday">Sunday</a></li>
     </ul>
-       
+    <h3>Quote of The day</h3>
+    <blockquote><p><?php echo $quote;?></p></blockquote>
+    <cite><p>-<?=$philosopher?></p></cite>
       </aside>
     </div>
-<?php include '../includes/footer.php'; ?>
+<?php include 'includes/footer.php'; ?>
