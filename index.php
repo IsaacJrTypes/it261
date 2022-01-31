@@ -1,34 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="css/styles.css" type="text/css" rel="stylesheet" />
-    <title>Home Page</title>
-  </head>
-  <body>
-    <header>
-      <div id="inner-header">
-        <h1 id="logo">
-          <a href="index.php">
-            <img src="images/php-logo.svg" alt="Php Logo" />
-          </a>
-        </h1>
-
-        <nav>
-          <ul>
-            <li><a href="index.php">Home</a></li>
-            <li><a href="about.php">About</a></li>
-            <li><a href="daily.php">Daily</a></li>
-            <li><a href="project.php">Project</a></li>
-            <li><a href="contact.php">Contact</a></li>
-            <li><a href="gallery.php">Gallery</a></li>
-          </ul>
-        </nav>
-      </div>
-      <!-- end inner header -->
-    </header>
+    <?php include('includes/header.php');?>
     <div id="wrapper">
       <div id="hero">
         <img
@@ -90,22 +60,17 @@
           <li><a href="weeks/week2/hereDoc.php" title="Link to hereDoc.php">hereDoc.php</a></li>
         </ul>
         <h3>Week 3:</h3>
+        <ul>
+          <li><a href="weeks/week3/arrays.php" title="Link to arrays.php">arrays.php</a></li>
+    
+          <li><a href="weeks/week3/date.php" title="Link to date.php">date.php</a></li>
+          <li><a href="weeks/week3/if-else.php" title="Link to if-else.php">if-else.php</a></li>
+          <li><a href="weeks/week3/switch.php" title="Link to switch.php">switch.php</a></li>
+          <li><a href="weeks/week3/index.php" title="Link to index.php">index.php</a></li>
+          <li><a href="weeks/week3/for-loop.php" title="Link to for-loop.php">for-loop.php</a></li>
+        </ul>
         <h3>Week 4:</h3>
       </aside>
     </div>
     <!-- End wrapper -->
-    <footer>
-      <div id="inner-footer">
-        <ul>
-          <li>Copyright &copy; <?php echo date('Y'); ?> </li>
-          <li>All Rights Reserved</li>
-          <li><a href="index.php">Web Design by Isaac</a></li>
-          <li><a id="html-checker" href="#">HTML Validation</a></li>
-          <li><a id="css-checker" href="#">CSS Validation</a></li>
-        </ul>
-      </div>
-      <!--Inner Footer -->
-    </footer>
-    <script src="js/validator.js"></script>
-  </body>
-</html>
+    <?php include('includes/footer.php');?>

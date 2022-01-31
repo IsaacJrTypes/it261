@@ -14,7 +14,7 @@ img {
 /* END CSS Reset  */
 
 body {
-  background: #4a4e69;
+  background: #D9D9D9;
 }
 
 header {
@@ -63,21 +63,32 @@ nav a.current {
   max-width: 1000px;
 }
 
+#wrapper .olive {
+  background:#c3d0c4;   
+ }
 
-#hero {
-  overflow: hidden;
-  background: #9398cf;
-  margin-bottom: 20px;
-  padding: 20px;
-  clear: both;
+#wrapper .raz {
+  background:#b63d61;   
+ }
+#wrapper .empress {
+  background:#946972;   
+}
+#wrapper .skyBlue {
+  background:#85C4EB;   
+}
+#wrapper .helio {
+  background:#9e54c5;   
+}
+ 
+#wrapper .slateBlue {
+  background:#696ECB;   
+}
+#wrapper .camelot {
+  background:#ad5482; 
 }
 
-img.profile {
-  float: right;
-  width: 150px;
-  border-radius: 15px;
-  margin: 12px 90px;
-}
+
+
 
 main {
   width: 62%;
@@ -85,34 +96,7 @@ main {
   float: left;
   margin-bottom: 20px;
 }
-
-main.default {
-  background:#9398cf;   
- }
-
-main.brown {
-  background:BurlyWood;   
- }
- main.darkbrown {
-  background:Chocolate;   
- }
- main.lightyellow {
-  background:Beige;   
- }
- main.lightgreen {
-  background:DarkSeaGreen;   
- }
  
- main.lightorange {
-  background:DarkOrange;   
- }
- main.coffee {
-  background:SaddleBrown; 
- }
- p {
-     width:60ch;
- }
-
 h1,h2,h3,h4 {
   margin: 16px 0;
 }
@@ -136,6 +120,21 @@ aside {
 
 aside ul {
   margin-left: 25px;
+}
+
+aside h3 {
+    margin-top:25px;
+    margin-bottom: 0;
+}
+
+cite {
+    display: block;
+    text-align: right;
+    margin-right: 20px;
+}
+
+cite p {
+    margin-right: 30px;
 }
 
 footer {
