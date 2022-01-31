@@ -4,7 +4,7 @@
       <main class="<?php echo $divClass;?>">
         <section>
           <h2>Philosopher of The Day!</h2>
-          <h3><?php echo date('l');?>s we celebrate <?php echo $philosopher;?></h3>
+          <h3><?php echo $today;?>s we celebrate <?php echo $philosopher;?></h3>
           
           <img src="images/<?php echo $pic;?>" alt="<?php echo $alt;?>">
     <p><?php echo $content; ?>
@@ -12,7 +12,7 @@
     <p>Content Sourced from Wikipedia</p>
         </section>
       </main>
-      <aside>
+      <aside class="<?php echo $divClass;?>">
         <h2>Check Out The Other Days</h2>
     
         <ul>
@@ -24,7 +24,7 @@
         <li><a href="daily.php?today=Saturday">Saturday</a></li>
         <li><a href="daily.php?today=Sunday">Sunday</a></li>
     </ul>
-    <h3>Quote of The day</h3>
+    <h3>Quote of The Day</h3>
     <blockquote><p><?php echo $quote;?></p></blockquote>
     <cite>-<?=$philosopher?></cite>
       </aside>
