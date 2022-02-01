@@ -8,12 +8,28 @@ form {
     width: 400px;
     margin: 30px auto;
     padding: 10px;
+    border: 1px solid coral;
 }
 
+.celcius form {
+    border: none;
+    padding: 0;
+}
+
+.celcius fieldset {
+    border: 1px solid plum;
+    padding:10px;
+}
 
 label {
     display: block;
     margin-bottom: 10px;
+}
+
+input {
+    display: block;
+    margin-bottom: 10px;
+    height: 30px;
 }
 
 a {
