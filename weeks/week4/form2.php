@@ -11,7 +11,10 @@ if (isset($_POST['fname'],
         $lname = $_POST['lname'];
         $email = $_POST['email'];
         $msg = $_POST['msg'];
-if(empty($_POST['name'] && $_POST['email'] && $_POST['msg'])) {
+if(empty($_POST['fname'] &&
+         $_POST['lname'] &&
+         $_POST['email'] && 
+         $_POST['msg'])) {
   echo 'A form field is missing';
 } else {
   echo $fname;
@@ -28,9 +31,9 @@ if(empty($_POST['name'] && $_POST['email'] && $_POST['msg'])) {
     <form action="" method="post">
     <label>First Name</label>
     <input type="text" name="fname"></input>
-    
     <label>Last Name</label>
     <input type="text" name="lname"></input>
+    
     <label>Email</label>
     <input type="email" name="email"></input>
     <label>Msg</label>

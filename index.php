@@ -70,6 +70,14 @@
           <li><a href="weeks/week3/for-loop.php" title="Link to for-loop.php">for-loop.php</a></li>
         </ul>
         <h3>Week 4:</h3>
+        <ul>
+        <li><a href="weeks/week4/form1.php" title="Link to form1.php">form1.php</a></li>
+        <li><a href="weeks/week4/form2.php" title="Link to form2.php">form2.php</a></li>
+        <li><a href="weeks/week4/form3.php" title="Link to form3.php">form3.php</a></li>
+        <li><a href="weeks/week4/form-get.php" title="Link to form-get.php">form-get.php</a></li>
+        <li><a href="weeks/week4/celcius.php" title="Link to celcius.php">celcius.php</a></li>
+        <li><a href="weeks/week4/arithmetic-form.php" title="Link to arithmetic-form.php">arithmetic-form.php</a></li>
+        </ul>
       </aside>
     </div>
     <!-- End wrapper -->

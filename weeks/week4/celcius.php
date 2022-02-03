@@ -43,7 +43,7 @@
         } elseif($far <=80) {
             echo '<p>'.$cel.' degrees celcius = '.$far.' degrees fahrenheit and it is getting to new seattle warm weather</p>';
         } else {
-            echo '<p>'.$cel.' degrees celcius = '.$far.' degrees fahrenheit and it is comfortable seattle weather</p>';
+            echo '<p>'.$cel.' degrees celcius = '.$far.' degrees fahrenheit and it is <span class="hot">Hot</span> seattle weather</p>';
         }
         
 
