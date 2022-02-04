@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <title>My Adder Assignment</title>
@@ -35,6 +36,7 @@ if (isset($_POST['num1'],$_POST['num2'])){
 }//end isset
 ?>
 <!-- Here Are the Errors:
+    -missing !doc declaration
     - php code should be below closing form tag and above closing body tag
     -styles should be in head or link to seperate css file
     - no need for - in -= otherwise mytotal willhold a negative value
