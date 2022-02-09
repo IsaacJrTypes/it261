@@ -78,6 +78,12 @@
         <li><a href="weeks/week4/celcius.php" title="Link to celcius.php">celcius.php</a></li>
         <li><a href="weeks/week4/arithmetic-form.php" title="Link to arithmetic-form.php">arithmetic-form.php</a></li>
         </ul>
+        <h3>Week 5:</h3>
+        <ul>
+          <li><a href="weeks/week5/currency.php" title="Link to currency.php">currency.php</a></li>
+          <li><a href="weeks/week5/currency2.php" title="Link to currency2.php">currency2.php</a></li>
+          <li><a href="weeks/week5/null.php" title="Link to null.php">null.php</a></li>
+        </ul>
       </aside>
     </div>
     <!-- End wrapper -->

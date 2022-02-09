@@ -14,7 +14,7 @@ switch(THIS_PAGE) {
 
 $nav['website/daily.php'] = 'Switch';
 $nav['website/troubleshoot.php'] = 'Troubleshoot';
-$nav['calculator.php'] = 'Calculator';
+$nav['website/calculator.php'] = 'Calculator';
 $nav['email.php'] = 'Email';
 $nav['gallery.php'] = 'Gallery';
 $nav['database.php'] = 'Database';

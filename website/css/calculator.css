@@ -4,9 +4,26 @@
     box-sizing: border-box;
 }
 body {
-    width:500px;
+    background: #f5f5f5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size:100%;
+}
+
+form {
+    width:400px;
     margin:20px auto;
-    font-size: 16px;
+    padding:15px;
+    border: 1px solid gray;
+    background-color: gainsboro;
+}
+
+form li {
+    line-height: .8;
+    list-style: none;
+}
+
+form p {
+    text-align: center;
 }
 
 label {
@@ -15,11 +32,58 @@ label {
     font-size: 1.1em;
 }
 
+label + ul {
+    margin:10px 0 10px 15px;
+}
+
+input{
+    margin-bottom: 10px;
+    height: 30px;
+    width:100%;
+}
+
+input[type=radio] {
+    margin-right:3px;
+    height:auto;
+    width:auto;
+}
+
+input[type=submit] {
+    display: block;
+    height:auto;
+    width:auto;
+}
+
+select {
+    display:block;
+    margin-bottom: 10px;
+}
+
 .error {
     display: block;
     text-align: center;
+    min-height: 30px;
     color:red;
     font-style:italic;
     font-size: 0.9em
 
+}
+
+.box {
+    width: 500px;
+    margin:10px auto;
+    text-align: center;
+    background: rgb(212, 207, 207);
+}
+
+.box p {
+    text-align: left;
+    margin: 10px auto;
+}
+
+/* typography */
+h1,h2 {
+    text-align: center;
+    margin-top: 20px;
+    font-family: playfair,sarif;
 }

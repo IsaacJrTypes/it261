@@ -73,19 +73,19 @@ function dollarFormat($value)
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
     if(empty($_POST['name'])) {
-        echo 'Please fill out your name!';
+        echo 'Please fill out your name!<br>';
     }
 
     if(empty($_POST['email'])) {
-        echo 'Please fill out your email!';
+        echo 'Please fill out your email!<br>';
     }
 
     if(empty($_POST['amount'])) {
-        echo 'Please fill out your amount! A "Zero" amount will not work!';
+        echo 'Please fill out your amount!<br> A "Zero" amount will not work!<br>';
     }
 
     if(empty($_POST['currency'])) {
-        echo 'Please choose your currency!';
+        echo 'Please choose your currency!<br>';
     }
 
     if($_POST['bank'] == NULL) {
