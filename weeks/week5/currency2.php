@@ -102,10 +102,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $currency=$_POST['currency'];
         $bank=$_POST['bank'];
 
-        $total = intval($amount) * intval($currency);
+        $intAmount = intval($amount);
+        $total = $intAmount * $currency;
 
         if(!empty($name && $email && $amount && $currency && $bank)) {
-
+        
         echo'
         <div class="box">
         <h2>Hello, <b>'.$name.'</b>!</h2>
