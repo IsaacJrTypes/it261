@@ -150,21 +150,21 @@
                     if ($speed>=60 && $weather=='Snowing') {
                         $divClass = 'snow';
                         $speed = 60;
-                        $addMsg = '<p>Snow tires or chains <em>Recommended!!</em></p>';
+                        $addMsg = '<p>Snow tires or chains are <b>Recommended</b>!!</p>';
                         echo weatherAlert($weather,$speed,$addMsg);
                     }//end snow
 
                     if ($speed>=50 && $weather=='Icy') {
                         $divClass = 'icy';
                         $speed = 50;
-                        $addMsg = '<p>Snow tires or chains <em>Highly Recommended!!</em></p>';
+                        $addMsg = '<p>Snow tires or chains are <b>Highly Recommended</b>!!</p>';
                         echo weatherAlert($weather,$speed,$addMsg);
                     }//end icy
                     
                     if ($speed>=10 && $weather=='White-Out') {
                         $divClass = 'icy';
                         $speed = 10;
-                        $addMsg ='<p>Snow tires or chains <em>Essential!!</em></p>';
+                        $addMsg ='<p>Snow tires or chains are <b>Essential</b>!!</p>';
                         echo weatherAlert($weather,$speed,$addMsg);
                     }//end white-out
 
