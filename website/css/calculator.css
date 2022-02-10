@@ -100,9 +100,9 @@ select {
     display: block;
     text-align: center;
     min-height: 30px;
-    color:red;
+    text-shadow: 2px 2px 3px #FF0000;
     font-style:italic;
-    font-size: 0.9em
+    font-size: 1em
 
 }
 
