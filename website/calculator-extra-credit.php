@@ -8,7 +8,8 @@
     <title>Mileage Calculator</title>
 </head>
 <body>
-    <h1>My Travel Calculator</h1>
+    <h1>My Travel Calculator --Extra Credit</h1>
+    <li></li>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
         <label>Name</label>
         <input type="text" name="name"  value="<?php if(isset($_POST['name'])) echo htmlspecialchars($_POST['name']);?>">
@@ -18,6 +19,15 @@
 
         <label>How fast do you typically drive?</label>
         <input type="number" name="speed" min="0" value="<?php if(isset($_POST['speed'])) echo htmlspecialchars($_POST['speed']);?>">
+
+        <label>Weather Forcast</label>
+        <ul>
+            <li><input type="radio" name="weather" value="Sunny" <?php if(isset($_POST['weather']) && $_POST['weather'] == 'Sunny') echo 'checked= "checked"'; ?> >Sunny</li>
+            <li><input type="radio" name="weather" value="Raining" <?php if(isset($_POST['weather']) && $_POST['weather'] == 'Raining') echo 'checked= "checked"'; ?> >Raining</li>
+            <li><input type="radio" name="weather" value="Snowing" <?php if(isset($_POST['weather']) && $_POST['weather'] == 'Snowing') echo 'checked= "checked"'; ?> >Snowing</li>
+            <li><input type="radio" name="weather" value="Icy" <?php if(isset($_POST['weather']) && $_POST['weather'] == 'Icy') echo 'checked= "checked"'; ?> >Icy</li>
+            <li><input type="radio" name="weather" value="White-Out" <?php if(isset($_POST['weather']) && $_POST['weather'] == 'White-Out') echo 'checked= "checked"'; ?> >White Out</li>
+        </ul>
 
         <label>How many hours per day do you plan on driving?</label>
         <input type="number" name="hours" min="0" value="<?php if(isset($_POST['hours'])) echo htmlspecialchars($_POST['hours']);?>">
@@ -69,6 +79,16 @@
         ';
     }
 
+    function weatherAlert($weather,$speed,$addMsg) {
+        echo'
+        <div class="box">
+        <h2>Severe Weather Alert</h2>
+        <p>Due to <strong>'.$weather.' conditions</strong>, we recommend that you reduce your speed to <b>'.$speed.' miles per hour</b> which will affect your total hours as well</p>
+        '.$addMsg.'
+        </div>
+        ';
+    }
+
 
     //Check post method, trigger empty field msg
     if($_SERVER['REQUEST_METHOD'] == 'POST') {
@@ -108,19 +128,67 @@
             //if !empty, print info
             if(!empty($name&&$totalMiles&&$speed&&$hrsPerDay&&$gasPrice&&$mpg)) {
 
-            //calculate TotalDriveHrs from total miles/speed
-            $totalDriveHrs = intval($totalMiles)/intval($speed);
+                //if speed <80  conditions 
+                if ($speed <= 79){
+                
+                    if (isset($_POST['weather'])) {
+                    $weather = $_POST['weather'];
 
-            //calculate days from Total drive hours
-            $days = $totalDriveHrs/intval($hrsPerDay);
+                    
+                    //if weather options
+                    if($weather=='Sunny'){
+                        $divClass = 'sunny';
+                    }//end summer
 
-            //calculate gallons for trip
-            $gallons = intval($totalMiles)/intval($mpg);
+                    if ($speed>=65 && $weather=='Raining') {
+                        $divClass = 'rain';
+                        $speed = 65;
+                        $addMsg ='';
+                        echo weatherAlert($weather,$speed,$addMsg);
+                    }//end rain
+                    
+                    if ($speed>=60 && $weather=='Snowing') {
+                        $divClass = 'snow';
+                        $speed = 60;
+                        $addMsg = '<p>Snow tires or chains <em>Recommended!!</em></p>';
+                        echo weatherAlert($weather,$speed,$addMsg);
+                    }//end snow
 
-            //calculate cost
-            $cost = $gallons * intval($gasPrice);    
+                    if ($speed>=50 && $weather=='Icy') {
+                        $divClass = 'icy';
+                        $speed = 50;
+                        $addMsg = '<p>Snow tires or chains <em>Highly Recommended!!</em></p>';
+                        echo weatherAlert($weather,$speed,$addMsg);
+                    }//end icy
+                    
+                    if ($speed>=10 && $weather=='White-Out') {
+                        $divClass = 'icy';
+                        $speed = 10;
+                        $addMsg ='<p>Snow tires or chains <em>Essential!!</em></p>';
+                        echo weatherAlert($weather,$speed,$addMsg);
+                    }//end white-out
 
-            echo msg($name,$totalDriveHrs,$days,$gallons,$cost);
+                    }//end weather conditons
+
+                 //calculate TotalDriveHrs from total miles/speed
+                 $totalDriveHrs = intval($totalMiles)/intval($speed);
+
+                 //calculate days from Total drive hours
+                 $days = $totalDriveHrs/intval($hrsPerDay);
+ 
+                 //calculate gallons for trip
+                 $gallons = intval($totalMiles)/intval($mpg);
+ 
+                 //calculate cost
+                 $cost = $gallons * intval($gasPrice);
+
+                 echo msg($name,$totalDriveHrs,$days,$gallons,$cost);
+
+                } else {
+                   echo span('Speed is too fast!!');
+                   echo span('High probablity of getting a speeding ticket!!');
+                }// end speed
+
             }//end !empty
 
 
