@@ -83,6 +83,7 @@
           <li><a href="weeks/week5/currency.php" title="Link to currency.php">currency.php</a></li>
           <li><a href="weeks/week5/currency2.php" title="Link to currency2.php">currency2.php</a></li>
           <li><a href="weeks/week5/null.php" title="Link to null.php">null.php</a></li>
+          <li><a href="website/calculator-extra-credit.php" title="Link to calculator-extra-credit.php">calculator-extra-credit.php</a></li>
         </ul>
       </aside>
     </div>
