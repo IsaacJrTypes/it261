@@ -9,12 +9,49 @@ body {
     font-size:100%;
 }
 
+.Sunny {
+    background: url(https://images.unsplash.com/photo-1602798415471-595a19ef43e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=465&q=80) no-repeat center center fixed;  
+    background-size: cover;
+    height: 100%;  
+}
+
+.Raining {
+    background: url(https://images.unsplash.com/photo-1542320139-e020450a0abf?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1974&q=80) no-repeat center center fixed;  
+    background-size: cover;
+    height: 100%;  
+}
+
+.Snowing {
+    background: url(https://images.unsplash.com/photo-1514746990821-35829b4d2d40?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2070&q=80) no-repeat center center fixed;  
+    background-size: cover;
+    height: 100%;  
+}
+.Icy {
+    background: url(https://images.unsplash.com/photo-1600785550430-80485697e25b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=488&q=80) no-repeat center center fixed;  
+    background-size: cover;
+    height: 100%;  
+}
+.White-Out {
+    background: url(https://images.unsplash.com/photo-1483119624769-b1a73c256500?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=865&q=80) no-repeat center center fixed;  
+    background-size: cover;
+    height: 100%;  
+}
+
+
+
+
+
+.subheader {
+    width: 400px;
+    margin: 10px auto;
+}
+
 form {
     width:400px;
     margin:20px auto;
     padding:15px;
     border: 1px solid gray;
-    background-color: gainsboro;
+    background-color: rgba(220, 220, 220, 0.65);
 }
 
 form li {
@@ -70,10 +107,10 @@ select {
 }
 
 .box {
-    width: 500px;
+    width: 400px;
     margin:10px auto;
     text-align: center;
-    background: rgb(212, 207, 207);
+    background: rgba(212, 207, 207,0.6);
 }
 
 .box p {

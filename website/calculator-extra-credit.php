@@ -7,9 +7,14 @@
     <link href="css/calculator.css" type="text/css" rel="stylesheet" />
     <title>Mileage Calculator</title>
 </head>
-<body>
+<body class="<?php if(isset($_POST['weather'])) echo htmlspecialchars($_POST['weather']);?>">
     <h1>My Travel Calculator --Extra Credit</h1>
-    <li></li>
+    <h2>Friendly Reminder</h2>
+
+    <ul class="subheader">
+        <li>Cannot speed over 79 miles per hour</li>
+        <li>Based on weather condtions (Other than sunny), the speed is reduced</li>
+    </ul>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
         <label>Name</label>
         <input type="text" name="name"  value="<?php if(isset($_POST['name'])) echo htmlspecialchars($_POST['name']);?>">
@@ -74,7 +79,7 @@
         <div class="box">
         <p>Hello '.$name.',</p>
         <p>You will be travelling a total of <b>'.dformat($totalDriveHrs).' hours</b> and  
-        taking <b>'.dformat($days).' days</b>. Give the distance, you will be using <b>'.dformat($gallons).' gallons</b> of gas, costing you <b>'.dollarFormat($cost).'</b>.</p>
+        taking <b>'.dformat($days).' days</b>. Given the distance, you will be using <b>'.dformat($gallons).' gallons</b> of gas, costing you <b>'.dollarFormat($cost).'</b>.</p>
         </div>
         ';
     }
@@ -130,39 +135,30 @@
 
                 //if speed <80  conditions 
                 if ($speed <= 79){
-                
+                    //if weather set, set $weather and pass
                     if (isset($_POST['weather'])) {
                     $weather = $_POST['weather'];
 
-                    
-                    //if weather options
-                    if($weather=='Sunny'){
-                        $divClass = 'sunny';
-                    }//end summer
 
                     if ($speed>=65 && $weather=='Raining') {
-                        $divClass = 'rain';
                         $speed = 65;
                         $addMsg ='';
                         echo weatherAlert($weather,$speed,$addMsg);
                     }//end rain
                     
                     if ($speed>=60 && $weather=='Snowing') {
-                        $divClass = 'snow';
                         $speed = 60;
                         $addMsg = '<p>Snow tires or chains are <b>Recommended</b>!!</p>';
                         echo weatherAlert($weather,$speed,$addMsg);
                     }//end snow
 
                     if ($speed>=50 && $weather=='Icy') {
-                        $divClass = 'icy';
                         $speed = 50;
                         $addMsg = '<p>Snow tires or chains are <b>Highly Recommended</b>!!</p>';
                         echo weatherAlert($weather,$speed,$addMsg);
                     }//end icy
                     
                     if ($speed>=10 && $weather=='White-Out') {
-                        $divClass = 'icy';
                         $speed = 10;
                         $addMsg ='<p>Snow tires or chains are <b>Essential</b>!!</p>';
                         echo weatherAlert($weather,$speed,$addMsg);
