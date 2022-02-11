@@ -1,13 +1,3 @@
-<?php
-function dollarFormat($value) {
-    return '$' . number_format($value, 2);
-}
-
-function span($string) {
-    return '<span class="error">'.$string.'</span>';
-}
-?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,11 +5,11 @@ function span($string) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
-    <title>Second Currency Form</title>
+    <title>Extra Credit Currency Form</title>
 </head>
-<body>
-<h1>My Second Currency Converter Form</h1>
-<form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
+<body class="ec">
+<h1>My Currency Converter Form --Extra Credit</h1>
+<form class="ec" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
 
 <label>Name</label>
 <input type="text" name="name" value="<?php if(isset($_POST['name'])) echo htmlspecialchars($_POST['name']);?>">
@@ -51,6 +41,7 @@ function span($string) {
 
 <!-- checkbox works same as radio btn -->
 <!-- Cannot select "select one" -->
+
 <label>Banking Institution</label>
 <select name="bank">
 <option value="" NULL <?php if(isset($_POST['bank'])&& $_POST['bank']== NULL) echo 'selected = "unselected"' ;?> >Select One</option>
@@ -69,6 +60,25 @@ function span($string) {
 </form>
 <p class="btn"><a class="ec" href="">Reset</a></p>
 <?php
+
+function dollarFormat($value) {
+    return '$' . number_format($value, 2);
+}
+
+function span($string) {
+    return '<span class="error">'.$string.'</span>';
+}
+
+function msg($color,$mood,$state,$total,$addMsg,$embed) {
+    echo'
+    <div class="box '.$color.'">
+    <p>I am '.$mood.' because I have '.$state.' since I have '.dollarFormat($total).' American Dollars and '.$addMsg.'</p>
+    '.$embed.'
+    </div>
+    ';
+}
+
+
 //if name is not filled out, give me msg
 //if each of the input fields not filled out, prompt specific msg
 //name, email, amount, currency, bank
@@ -107,17 +117,25 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $total = $intAmount * $currency;
 
         if(!empty($name && $email && $amount && $currency && $bank)) {
-        
-        echo'
-        <div class="box">
-        <h2>Hello, <b>'.$name.'</b>!</h2>
-        <p>We have confirmed your email as <b>'.$email.'</b> and we will be sending you the following information: </p>
-        <p> You have deposited '.$amount.' in foreign currency</p>
-        <p>'.dollarFormat($total).' in American Dollars</p>
-        <p>And, you will receive a statement from '.$bank.' reflecting this deposit.</p>
-        </div>
 
-        ';
+        
+            if ($total<500) {
+                $color = 'sad';
+                $mood = 'sad';
+                $state = 'less money than I thought I had';
+                $addMsg = 'I need some melancholy music to help me cope with my feelings';
+                $embed = '<iframe width="490" height="327" src="https://www.youtube.com/embed/TjPhzgxe3L0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+                msg($color,$mood,$state,$total,$addMsg,$embed);
+            } else {
+                $color = 'happy';
+                $mood = 'happy';
+                $state = 'more money than I thought I had';
+                $addMsg = 'I need some happy music to help me express my feelings';
+                $embed = '<iframe width="490" height="327" src="https://www.youtube.com/embed/HgzGwKwLmgM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+
+                msg($color,$mood,$state,$total,$addMsg,$embed);
+            }
+            
         }//end empty
 
     }//end isset

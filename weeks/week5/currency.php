@@ -63,7 +63,7 @@ function dollarFormat($value)
 
 <input type="submit" value="Convert it!!">
 </form>
-<button><a href="">Reset</a></button>
+<p class="btn"><a class="ec" href="">Reset</a></p>
 <?php
 //if name is not filled out, give me msg
 //if each of the input fields not filled out, prompt specific msg
