@@ -1,8 +1,15 @@
 <?php
+//reads entire page, delays sending header
+ob_start();
+
 $email = '';
 $comments = '';
-$privacyErr = '';
-$commentsErr = '';
+$fname = '';
+$lname = '';
+$gender = '';
+$wines = '';
+$regions = '';
+$privacy = '';
 
 $fNameErr = '';
 $lNameErr = '';
@@ -11,6 +18,8 @@ $genderErr = '';
 $phoneErr = '';
 $winesErr = '';
 $regionsErr = '';
+$commentsErr = '';
+$privacyErr = '';
 
 if($_SERVER['REQUEST_METHOD'] == 'POST') {
 
@@ -68,6 +77,56 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         $privacy = $_POST['privacy'];
     }
 
+    //our wine function
+    function my_wines($wines) {
+        $my_return = '';
+        if(!empty($_POST['wines'])) {
+            $my_return = implode(', ', $_POST['wines']);
+        } else {
+            $winesErr = 'Please choose a wine';
+        }
+        return $my_return;
+    }//end wine function
+
+    if(isset($_POST['fname'],
+             $_POST['lname'],
+             $_POST['email'],
+             $_POST['gender'],
+             $_POST['phone'],
+             $_POST['regions'],
+             $_POST['wines'],
+             $_POST['comments'],
+             $_POST['privacy'])) {
+    $to = 'duckhunterjr@gmail.com';
+    $subject = 'Test email '.date('m/d/y, h i A');
+    $body = '
+    First Name: '.$fname.' '.PHP_EOL.'
+    Last Name: '.$lname.' '.PHP_EOL.'
+    Email: '.$email.' '.PHP_EOL.'
+    Gender: '.$gender.' '.PHP_EOL.'
+    Phone Number: '.$phone.' '.PHP_EOL.'
+    Regions: '.$regions.' '.PHP_EOL.'
+    Wines: '.my_wines($wines).' '.PHP_EOL.'
+    Comments: '.$comments.' '.PHP_EOL.'
+    ';
+
+        if(!empty($fname&&
+                $lname&&
+                $gender&&
+                $wines&&
+                $regions&&
+                $email&&
+                $phone&&
+                $comments&&
+                $privacy)) {
+            $headers = array(
+                'From'=> 'no-reply@studentswa.com',
+                'Reply to:'=>''.$email.'');
+
+            mail($to,$subject,$body,$headers);
+            header('Location:thx.php');
+        }//close if !empty
+    }//close isset
 
 }// END server request
 
@@ -143,11 +202,10 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     <option value="se" <?php if(isset($_POST['regions'])&& $_POST['regions'] == 'se') echo 'selected = "selected" ';?> >Southeast</option>
 
     </select>
-
     <span class="error"><?= $regionsErr?></span>
 
     <label>Comments</label>
-    <textarea name="comments" value="<?php if(isset($_POST['comments'])) echo htmlspecialchars($_POST['comments']) ;?>"></textarea>
+    <textarea name="comments"><?php if(isset($_POST['comments'])) echo htmlspecialchars($_POST['comments']) ;?></textarea>
     <span class="error"><?= $commentsErr?></span>
 
     <label>Privacy</label>
@@ -157,33 +215,16 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     </ul>
     <span class="error"><?= $privacyErr?></span>
 
-
     <input type="submit" value="Send it!">
     </fieldset>
     <p><a href="">Reset</a></p>
     </form>
-    <?php
-    if(isset($_POST['fname'],
-    $_POST['lname'],
-    $_POST['email'],
-    $_POST['gender'],
-    $_POST['phone'],
-    $_POST['regions'],
-    $_POST['wines'],
-    $_POST['comments'],
-    $_POST['privacy'])) {
-    echo '
-    '.$fname.' <br>
-    '.$lname.' <br>
-    '.$email.' <br>
-    '.$gender.' <br>
-    '.$regions.' <br>
-    '.$comments.' <br>
-    '.$privacy.' <br>
     
-    ';
+    <?php
+    
 
-}//close isset
+
+
     ?>
 
 </body>

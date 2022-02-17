@@ -53,3 +53,13 @@ form ul {
     list-style-type: none;
     margin-bottom: 10px;
 }
+
+select, textarea {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    resize: none;
+    height: 140px;
+}

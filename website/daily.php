@@ -1,4 +1,6 @@
-<?php include 'includes/header.php'; 
+<?php 
+include('config.php');
+include('includes/header.php'); 
 ?>
 <div id="wrapper" >
       <main class="<?php echo $divClass;?>">

@@ -86,6 +86,12 @@
           <li><a href="website/calculator-extra-credit.php" title="Link to calculator-extra-credit.php">calculator-extra-credit.php</a></li>
           <li><a href="weeks/week5/currency-extra-credit.php" title="Link to currency-extra-credit.php">currency-extra-credit.php</a></li>
         </ul>
+        <h3>Week 6:</h3>
+        <ul>
+          <li><a href="weeks/week6/form.php" title="Link to form.php">form.php</a></li>
+          <li><a href="weeks/week6/form2.php" title="Link to form2.php">form2.php</a></li>
+          <li><a href="weeks/week6/functions.php" title="Link to functions.php">functions.php</a></li>
+        </ul>
       </aside>
     </div>
     <!-- End wrapper -->
