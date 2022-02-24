@@ -92,26 +92,26 @@ main.default {
 
 main.brown {
   background:BurlyWood;   
- }
- main.darkbrown {
+}
+main.darkbrown {
   background:Chocolate;   
- }
- main.lightyellow {
+}
+main.lightyellow {
   background:Beige;   
- }
- main.lightgreen {
+}
+main.lightgreen {
   background:DarkSeaGreen;   
- }
- 
- main.lightorange {
+}
+
+main.lightorange {
   background:DarkOrange;   
- }
- main.coffee {
+}
+main.coffee {
   background:SaddleBrown; 
- }
- p {
-     width:60ch;
- }
+}
+p {
+  max-width: 60ch;
+}
 
 h1,h2,h3,h4 {
   margin: 16px 0;

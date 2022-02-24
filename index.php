@@ -97,6 +97,7 @@
           <li><a href="weeks/week7/form3.php" title="Link to form.php">form3.php</a></li>
           <li><a href="weeks/week7/random.php" title="Link to random.php">random.php</a></li>
           <li><a href="weeks/week7/string.php" title="Link to string.php">string.php</a></li>
+          <li><a href="weeks/week7/pictures.php" title="Link to pictures.php">pictures.php</a></li>
         </ul>
       </aside>
     </div>
