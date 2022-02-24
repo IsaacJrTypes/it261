@@ -141,19 +141,26 @@ aside ul {
 footer {
   background: #22223b;
   border-top: 1px solid #666;
-  height: 50px;
   clear: both;
-  height: 50px;
-  line-height: 50px;
+  line-height: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 60px;
+
 }
 
 footer li {
-  float: left;
   font-size: 1.2rem;
-  margin-right: 40px;
+  padding: 10px 8px;
   list-style-type: none;
   color: #f2e9e4;
 }
+
 
 footer li a {
   color: #f2e9e4;

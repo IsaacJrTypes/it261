@@ -92,6 +92,12 @@
           <li><a href="weeks/week6/form2.php" title="Link to form2.php">form2.php</a></li>
           <li><a href="weeks/week6/functions.php" title="Link to functions.php">functions.php</a></li>
         </ul>
+        <h3>Week 7:</h3>
+        <ul>
+          <li><a href="weeks/week7/form3.php" title="Link to form.php">form3.php</a></li>
+          <li><a href="weeks/week7/random.php" title="Link to random.php">random.php</a></li>
+          <li><a href="weeks/week7/string.php" title="Link to string.php">string.php</a></li>
+        </ul>
       </aside>
     </div>
     <!-- End wrapper -->
