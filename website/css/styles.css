@@ -88,8 +88,6 @@ nav a.current {
 }
 
 
-
-
 main {
   width: 62%;
   background: #9398cf;
@@ -97,11 +95,22 @@ main {
   margin-bottom: 20px;
 }
 
-main.thx {
-  width: 100%;
+main.index {
+  width:95%;
+  padding: 10px;
+  margin: 0 auto;
+  float: none;
 }
 
-main.thx h1, main.thx p {
+main.thx {
+  width: 90%;
+  margin: 20px auto;
+  padding:30px;
+  float: none;
+  height: 200px;
+}
+
+main.thx h1, main.thx p, main.index h1 {
   text-align: center;
 }
  
@@ -148,18 +157,24 @@ cite p {
 footer {
   background: #22223b;
   border-top: 1px solid #666;
-  height: 50px;
   clear: both;
-  height: 50px;
-  line-height: 50px;
+  line-height: 20px;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 60px;
+
 }
 
 footer li {
-  float: left;
   font-size: 1.2rem;
-  margin-right: 40px;
   list-style-type: none;
   color: #f2e9e4;
+  padding: 10px 8px;
 }
 
 footer li a {

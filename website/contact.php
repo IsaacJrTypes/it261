@@ -3,9 +3,7 @@ include('config.php');
 include('includes/header.php');
 ?>
 <div id="wrapper">
-    <div id="hero">
-
-    </div><!-- End hero -->
+    <!-- End hero -->
     <main class="form">
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
     <fieldset>

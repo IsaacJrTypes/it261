@@ -7,13 +7,22 @@ switch(THIS_PAGE) {
         $title = 'Our Home';
         $body = 'home';
         break;
+    case 'about.php':
+        $title = 'About Page';
+        break;
     case 'daily.php':
         $title = 'Our Daily Page';
         $body = 'daily inner';
         break;
+    case 'people.php':
+        $title = 'People Page';
+        break;
     case 'contact.php':
         $title = 'Our Contact Page';
         $body = 'daily inner';
+        break;
+    case 'gallery.php':
+        $title = 'Gallery Page';
         break;
     case 'thx.php':
         $title = 'Thank You Page';
@@ -22,8 +31,8 @@ switch(THIS_PAGE) {
 
 $nav['index.php'] = 'Home';
 $nav['about.php'] = 'About';
-$nav['daily.php'] = 'Switch';
-$nav['project.php'] = 'Project';
+$nav['daily.php'] = 'Daily';
+$nav['people.php'] = 'People';
 $nav['contact.php'] = 'Contact';
 $nav['gallery.php'] = 'Gallery';
 
@@ -129,7 +138,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }
 
     if(empty($_POST['lname'])) {
-        $lNameErr = 'Please enter your name';
+        $lNameErr = 'Please enter your last name';
     } else {
         $lname = $_POST['lname'];
     }
@@ -233,4 +242,19 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
     }//close isset
 
 }// END server request
+
+/* Index.php image page */
+$photos[0] = 'aristotle';
+$photos[1] = 'epictetus';
+$photos[2] = 'marcus';
+$photos[3] = 'plato';
+$photos[4] = 'seneca';
+
+function random_images($photos) {
+    $my_return = '';
+    $i = rand(0,4);
+    $selected_image = ''.$photos[$i].'.jpg'; 
+    return $my_return = '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
+}
+
 ?>
