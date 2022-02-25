@@ -1,0 +1,47 @@
+/* Styles for week 8 */
+* {
+    padding:0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+body {
+    background-color: beige;
+}
+
+#wrapper {
+    max-width:1200px;
+    margin: 20px auto;
+    background:lightsteelblue;
+}
+
+.inner {
+    max-width:1200px;
+    /* use the values from a 940px grid */
+    margin:0 auto;
+}
+
+main {
+    float:left;
+    width:61.70%;
+    background: goldenrod;
+
+}
+
+aside {
+    float: right;
+    width:36.17%;
+    background: tan;
+}
+
+footer {
+    clear: both;
+    height: 60px;
+    line-height: 60px;
+}
+
+footer li {
+    list-style-type: none;
+    float: left;
+    margin-right: 30px;
+}
