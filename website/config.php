@@ -257,4 +257,11 @@ function random_images($photos) {
     return $my_return = '<img src="images/'.$selected_image.'" alt="'.$photos[$i].'">';
 }
 
+/* Associated list of wrestlers */
+$wrestler['Kenny_Omega'] = 'kenny_Winnipeg, Canada.';
+$wrestler['Thunder_Rosa'] = 'thund_Tijuana, Mexico.';
+$wrestler['CM_Punk'] = 'cmPun_Chicago, Illinois.';
+$wrestler['Adam_Page'] = 'adamP_Halifax, Virginia.';
+$wrestler['Britt_Baker_D.M.D'] = 'britt_Punxsutawney, Pennsylvania.';
+
 ?>
