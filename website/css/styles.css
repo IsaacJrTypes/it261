@@ -125,13 +125,15 @@ section {
 table {
   border:2px solid #645394;
   border-collapse:collapse;
+  margin: 0 auto;
 }
 
 td {
   border:2px solid #645394;
+  text-align: center;
 }
 
-td:first-child {
+td:first-child,td:last-child {
   width: 180px;
   height: 200px;
 }

@@ -258,10 +258,10 @@ function random_images($photos) {
 }
 
 /* Associated list of wrestlers */
-$wrestler['Kenny_Omega'] = 'kenny_Winnipeg, Canada.';
-$wrestler['Thunder_Rosa'] = 'thund_Tijuana, Mexico.';
-$wrestler['CM_Punk'] = 'cmPun_Chicago, Illinois.';
-$wrestler['Adam_Page'] = 'adamP_Halifax, Virginia.';
-$wrestler['Britt_Baker_D.M.D'] = 'britt_Punxsutawney, Pennsylvania.';
+$wrestler['Kenny_Omega'] = 'kenny_Winnipeg, Canada.altKen.';
+$wrestler['Thunder_Rosa'] = 'thund_Tijuana, Mexico.altThu.';
+$wrestler['CM_Punk'] = 'cmPun_Chicago, Illinois.altCmp.';
+$wrestler['Adam_Page'] = 'adamP_Halifax, Virginia.altAda.';
+$wrestler['Britt_Baker_D.M.D'] = 'britt_Punxsutawney, Pennsylvania.altBri.';
 
 ?>
