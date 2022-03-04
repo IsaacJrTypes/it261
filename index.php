@@ -99,6 +99,11 @@
           <li><a href="weeks/week7/string.php" title="Link to string.php">string.php</a></li>
           <li><a href="weeks/week7/pictures.php" title="Link to pictures.php">pictures.php</a></li>
         </ul>
+        <h3>Week 8:</h3>
+        <ul>
+          <li><a href="weeks/week8/people.php" title="Link to people.php">people.php</a></li>
+          
+        </ul>
       </aside>
     </div>
     <!-- End wrapper -->

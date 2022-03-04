@@ -11,8 +11,7 @@ body {
 
 #wrapper {
     max-width:1200px;
-    margin: 20px auto;
-    background:lightsteelblue;
+    margin: 30px auto;
 }
 
 .inner {
@@ -24,14 +23,22 @@ body {
 main {
     float:left;
     width:61.70%;
-    background: goldenrod;
-
 }
 
 aside {
     float: right;
     width:36.17%;
-    background: tan;
+}
+
+figure {
+    width: 250px;
+    height: 180px;
+}
+
+figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
 }
 
 footer {

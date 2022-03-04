@@ -2,6 +2,10 @@
 //we need to define the page that we are on as the page
 define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 
+define('DEBUG', 'TRUE');  // We want to see our errors
+
+include('credentials.php');
+
 switch(THIS_PAGE) {
     case 'index.php':
         $title = 'Our Home';
@@ -263,5 +267,20 @@ $wrestler['Thunder_Rosa'] = 'thund_Tijuana, Mexico.altThu.';
 $wrestler['CM_Punk'] = 'cmPun_Chicago, Illinois.altCmp.';
 $wrestler['Adam_Page'] = 'adamP_Halifax, Virginia.altAda.';
 $wrestler['Britt_Baker_D.M.D'] = 'britt_Punxsutawney, Pennsylvania.altBri.';
+
+function myError($myFile, $myLine, $errorMsg)
+{
+if(defined('DEBUG') && DEBUG)
+{
+ echo 'Error in file: <b> '.$myFile.' </b> on line: <b> '.$myLine.' </b>';
+      echo 'Error message: <b> '.$errorMsg.'</b>';
+      die();
+  }  else {
+      echo ' Houston, we have a problem!';
+      die();
+  }
+    
+    
+}
 
 ?>

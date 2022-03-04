@@ -41,9 +41,7 @@ include('./includes/header.php');
 
     <aside>
         <h3>This is my aside that will be displaying random images!</h3>
-        <figure>
-            <?= random_images($photos)?>
-        </figure>
+
     </aside>
 
 </div><!-- End of wrapper -->

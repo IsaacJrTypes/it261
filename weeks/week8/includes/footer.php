@@ -10,7 +10,6 @@
 
 </footer>
 
-<script></script>
 <?php
 //release web server resources
 @mysqli_free_result($result);
