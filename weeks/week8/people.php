@@ -3,6 +3,8 @@ include('config.php');
 include('./includes/header.php');
 
 ?>
+
+
     <main class="people">
         <h1>Welcome to my people page</h1>
         <?php

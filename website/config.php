@@ -2,8 +2,8 @@
 //we need to define the page that we are on as the page
 define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
 
+//philosopher db credentials
 define('DEBUG', 'TRUE');  // We want to see our errors
-
 include('credentials.php');
 
 switch(THIS_PAGE) {
@@ -19,7 +19,7 @@ switch(THIS_PAGE) {
         $body = 'daily inner';
         break;
     case 'people.php':
-        $title = 'People Page';
+        $title = 'Philosophers Page';
         break;
     case 'contact.php':
         $title = 'Our Contact Page';
@@ -75,7 +75,7 @@ switch($today) {
         $alt = 'Scupture of Immanuel Kant\'s head';
         $divClass = 'slateBlue';
         $quote = '“All our knowledge begins with the senses, proceeds then to the understanding, and ends with reason. There is nothing higher than reason';
-        $content = '<b>Immanuel Kant</b> was a German philosopher and one of the central Enlightenment thinkers.Born in Königsberg, Kant\'s comprehensive and systematic works in epistemology, metaphysics, ethics, and aesthetics have made him one of the most influential figures in modern Western philosophy.';
+        $content = '<b>Immanuel Kant</b> was a German philosopher and one of the central Enlightenment thinkers.Born in Königsberg, Kant\'s comprehensive and systematic works in epistemology, metaphysics, ethics, and aesthetics have made him one of the most influential figures in modern Western philosophy.”';
         break;
     case 'Sunday': 
         $philosopher = 'Confucius'; 
@@ -268,6 +268,7 @@ $wrestler['CM_Punk'] = 'cmPun_Chicago, Illinois.altCmp.';
 $wrestler['Adam_Page'] = 'adamP_Halifax, Virginia.altAda.';
 $wrestler['Britt_Baker_D.M.D'] = 'britt_Punxsutawney, Pennsylvania.altBri.';
 
+/* Databse functions */
 function myError($myFile, $myLine, $errorMsg)
 {
 if(defined('DEBUG') && DEBUG)
