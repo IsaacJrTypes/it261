@@ -19,6 +19,9 @@ switch(THIS_PAGE) {
         $body = 'daily inner';
         break;
     case 'people.php':
+        $title = 'Philosophers Database';
+        break;
+    case 'people-view.php':
         $title = 'Philosophers Page';
         break;
     case 'contact.php':

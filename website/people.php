@@ -18,12 +18,13 @@ CHARACTER SET utf8mb4  COLLATE utf8mb4_unicode_ci;
 <div id="wrapper">
     
     <main class="index">
-        <h1>Welcome to my page on philosophers</h1>
+        <h1>Welcome to my database on philosophers</h1>
 
         <table>
         <tr>
             <th>Philosophers</th>
-            <th>Era Alive</th>
+            <th>Timeline</th>
+            <th>Background Information</th>
         </tr>
 
         <?php
@@ -34,20 +35,17 @@ CHARACTER SET utf8mb4  COLLATE utf8mb4_unicode_ci;
         
         $result =  mysqli_query($iConn,$sql) or die(myError(__FILE__,__LINE__,mysqli_error($iConn)));
 
-        .
         if(mysqli_num_rows($result) > 0) {
             //-- associative array $row
             
             while($row = mysqli_fetch_assoc($result)) {
                 
                 echo'
-                <h2>Information about '.$row['name'].'</h2>
-                <ul>
-                    <li><b>Alive:</b> '.$row['era'].'</li>
-                    <li><b>Quote:</b> '.$row['quote'].'</li>
-                    <li><b>Bio:</b> '.$row['bio'].'</li>
-                </ul>
-                <p>For more information about '.$row['name'].' click <a href="people-view.php?id='. $row['philo_id'] .'" >here</a></p>
+                <tr>
+                    <td><b>'.$row['name'].'</b></td>
+                    <td>'.$row['era'].'</td>
+                    <td><p>For more information about '.$row['name'].' <br>Click <a href="people-view.php?id='. $row['philo_id'] .'" >here</a></p></td>
+                </tr>
                 ';
 
             }// close while loop
