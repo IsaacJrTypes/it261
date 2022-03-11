@@ -77,8 +77,8 @@ switch($today) {
         $pic = 'kant.jpg';
         $alt = 'Scupture of Immanuel Kant\'s head';
         $divClass = 'slateBlue';
-        $quote = '“All our knowledge begins with the senses, proceeds then to the understanding, and ends with reason. There is nothing higher than reason';
-        $content = '<b>Immanuel Kant</b> was a German philosopher and one of the central Enlightenment thinkers.Born in Königsberg, Kant\'s comprehensive and systematic works in epistemology, metaphysics, ethics, and aesthetics have made him one of the most influential figures in modern Western philosophy.”';
+        $quote = '“All our knowledge begins with the senses, proceeds then to the understanding, and ends with reason. There is nothing higher than reason.”';
+        $content = '<b>Immanuel Kant</b> was a German philosopher and one of the central Enlightenment thinkers.Born in Königsberg, Kant\'s comprehensive and systematic works in epistemology, metaphysics, ethics, and aesthetics have made him one of the most influential figures in modern Western philosophy.';
         break;
     case 'Sunday': 
         $philosopher = 'Confucius'; 
