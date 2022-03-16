@@ -34,3 +34,5 @@ include('server.php');
 
 
 </form>
+
+<p>Already have an accout? Please <a href="login.php">Please login!</a></p>
