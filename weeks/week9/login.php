@@ -17,7 +17,9 @@ include('server.php');
     <button type="submit" class="btn" name="login_user">Login</button>
     
     <button type="button" onclick="window.location.href='<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>'">Reset</button>
-
+    <?php
+include('errors.php');
+?>
 </fieldset>
 </form>
 
