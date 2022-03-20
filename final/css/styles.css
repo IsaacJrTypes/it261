@@ -1,0 +1,194 @@
+/* Styles ofr week 9 log in */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+}
+
+html,body {
+    height: 100%;
+}
+
+body {
+  margin: 0px auto;
+  background: #645394;
+}
+
+#page-container {
+    position:relative;
+    min-height: 100vh;
+}
+
+
+header {
+  background: yellow;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+#inner-header,
+#inner-footer {
+  margin: 0px auto;
+  max-width: 1000px;
+}
+
+#logo {
+  float: left;
+  display: flex;
+}
+
+img.logo {
+    width:100px;
+}
+
+.success {
+  background: lightblue;
+  padding: 10px;
+  width: 100px;
+}
+
+nav ul {
+  float: right;
+  margin-top: 20px;
+}
+
+nav li {
+  font-size: 1.5rem;
+  float: left;
+  margin-top: 40px;
+  margin-left: 40px;
+  list-style-type: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: #f2e9e4;
+}
+
+nav a:hover {
+  color: #9398cf;
+}
+
+nav a.current {
+  box-shadow: inset 0 0 5px;
+  padding: 10px;
+  border-radius: 9px;
+}
+
+#wrapper {
+  margin: 20px auto;
+  max-width: 1000px;
+  overflow: hidden;
+}
+
+main {
+  width: 62%;
+  background: #9398cf;
+  float: left;
+  margin-bottom: 20px;
+}
+
+main.index {
+  width: 95%;
+  padding: 10px;
+  margin: 0 auto;
+  float: none;
+}
+
+main.thx {
+  width: 90%;
+  margin: 20px auto;
+  padding: 30px;
+  float: none;
+  height: 200px;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  margin: 16px 0;
+}
+
+.center {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+section {
+  margin: 20px 10px;
+}
+
+p {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+aside {
+  width: 35%;
+  background: gainsboro;
+  float: right;
+  padding: 5px 12px;
+}
+
+aside ul {
+  margin-left: 25px;
+}
+
+aside h3 {
+  margin-top: 25px;
+  margin-bottom: 0;
+}
+
+form {
+  max-width: 580px;
+  margin: 0 auto 20px auto;
+}
+
+fieldset {
+  border: 1px solid tan;
+  padding: 10px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  height: 30px;
+  margin-bottom: 10px;
+}
+
+.error {
+  color: red;
+  font-style: italic;
+}
+
+footer {
+  background: #22223b;
+}
+
+footer ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 60px;
+}
+
+footer li {
+  font-size: 1.2rem;
+  list-style-type: none;
+  color: #f2e9e4;
+  padding: 10px 8px;
+}
+
+footer li a {
+  color: #f2e9e4;
+}
