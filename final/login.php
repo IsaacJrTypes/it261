@@ -8,7 +8,7 @@ include('includes/header-no-nav.php');
     <h1 class="center">Login page!</h1>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>" method="post">
 
-        <fieldset>
+        <fieldset class="login">
             <label>Username</label> 
             <input type="text" name="username" value="<?php if(isset($_POST['username'])) echo htmlspecialchars($_POST['username']) ;?>">
             <label>Password</label>

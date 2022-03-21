@@ -6,7 +6,7 @@ include('./includes/header-no-nav.php');
 <div id="wrapper">
 <h1 class="center">Register today</h1>
 <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
-<fieldset>
+<fieldset class="register">
     <label>First Name</label>
     <input type="text" name="first_name" value="<?php if(isset($_POST['first_name'])) echo htmlspecialchars($_POST['first_name']); ?>">
     
