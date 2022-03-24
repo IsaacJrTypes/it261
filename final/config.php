@@ -62,6 +62,11 @@ switch(THIS_PAGE) {
         $body = '';
         $headline = 'Vote for your favorite venue';
         break;
+    case 'thx.php':
+        $title = 'Thank You';
+        $body = '';
+        $headline = '';
+        break;
 }
 
 //php for artist switch page
