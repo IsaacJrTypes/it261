@@ -450,4 +450,8 @@ footer li a {
     padding: 10px;
   }
 
+  main.thx {
+    width: 100%;
+  }
+
 }
