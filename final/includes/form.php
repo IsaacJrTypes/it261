@@ -86,7 +86,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
         if(!empty($_POST['venue'])) {
             $my_return = implode(', ', $_POST['venue']);
         } else {
-            $venueErr = 'Select atleast 1 programming language';
+            $venueErr = 'Select at least one venue';
         }
         return $my_return;
     }//end venue function
