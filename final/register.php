@@ -5,7 +5,7 @@ include('./includes/header-no-nav.php');
 ?>
 <div id="wrapper">
 <div class="card-container">
-    <h1 class="center">Register today</h1>
+    <h1 class="center"><?=$headline?></h1>
     <form action="<?= htmlspecialchars($_SERVER['PHP_SELF']) ?>" method="post">
     <fieldset class="register">
         <label>First Name</label>

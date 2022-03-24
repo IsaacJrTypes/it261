@@ -6,7 +6,7 @@ include('includes/header-no-nav.php');
 ?>
 <div id="wrapper">
     <div class="card-container">
-        <h1 class="center">Login page!</h1>
+        <h1 class="center"><?=$headline?></h1>
         <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']) ;?>" method="post">
 
             <fieldset class="login">

@@ -100,7 +100,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST') {
              $_POST['venue'],
              $_POST['comments'],
              $_POST['privacy'])) {
-    $to = 'szemeo@mystudentswa.com';
+    $to = 'duckhunterjr@gmail.com';
     $subject = 'Test email '.date('m/d/y, h i A');
     $body = '
     First Name: '.$fname.' '.PHP_EOL.'

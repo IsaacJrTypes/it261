@@ -40,14 +40,14 @@ switch(THIS_PAGE) {
         $headline = 'Screenshot of Venues Database';
         break;
     case 'register.php':
-        $title = 'Register Today!';
+        $title = 'Come As You Are';
         $body = 'login';
         $headline = 'Register Today!';
         break;
     case 'login.php':
-        $title = 'Login Today!';
+        $title = 'Login Page';
         $body = 'login';
-        $headline = 'Login Page';
+        $headline = 'Login';
         break;
     case 'venues.php':
         $title = 'Seattle Concert Venues';
@@ -63,7 +63,7 @@ switch(THIS_PAGE) {
         $headline = 'Vote for your favorite venue';
         break;
     case 'thx.php':
-        $title = 'Thank You';
+        $title = 'Thank You!';
         $body = '';
         $headline = '';
         break;

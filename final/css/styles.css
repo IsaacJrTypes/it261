@@ -153,6 +153,7 @@ main.index {
 main.index p {
   margin: 10px auto;
   max-width: 60ch;
+  text-align: center;
 }
 
 main.thx {
@@ -216,7 +217,7 @@ h2,
 h3,
 h4 {
   margin: 16px 0;
-
+  text-align: center;
 }
 
 .center {
