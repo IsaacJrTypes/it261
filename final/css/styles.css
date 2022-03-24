@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@1,500&display=swap);
+
 /* Styles ofr week 9 log in */
 * {
   padding: 0;
@@ -9,23 +11,57 @@ img {
   width: 100%;
 }
 
-html,body {
-    height: 100%;
+html,
+body {
+  height: 100%;
 }
 
 body {
   margin: 0px auto;
-  background: #645394;
+  background: rgb(23, 23, 23);
+  font-family: Georgia,'Open Sans', sans-serif;
+  font-size: 18px;
+}
+
+body.login {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color:rgb(23, 23, 23);
+  background: url('../images/login-background.png') no-repeat center bottom; 
+}
+
+body.login #wrapper {
+  max-width: none;
+  overflow: visible;
+}
+
+body.login #wrapper div.card-container {
+  position: relative;
+  padding: 5px;
+  border: 1px solid rgb(23, 23, 23);
+  border-radius: 15px;
+  box-shadow: 0px 1px 600px rgba(0, 0, 0, 0.2);
+  background: #f5f5f5da;
+}
+
+body.login div.card-container p.center {
+  margin-bottom: 10px;
+}
+
+body.login footer {
+  background: #000000;
+  font-family: Georgia,'Open Sans', sans-serif;
+  box-shadow: 0px -18px #000000;
 }
 
 #page-container {
-    position:relative;
-    min-height: 100vh;
+  position: relative;
+  min-height: 100vh;
 }
 
-
 header {
-  background: yellow;
+  /* background: rgb(23, 23, 23); */
   overflow: hidden;
   padding: 0 10px;
 }
@@ -39,29 +75,37 @@ header {
 #logo {
   float: left;
   display: flex;
+  margin-left: 5px;
 }
 
 img.logo {
-    width:100px;
+  width: 100px;
 }
 
 .success {
-  background: lightblue;
-  padding: 10px;
+  padding: 8px;
   width: 100px;
+  color: #f2e9e4;
 }
 
 nav ul {
   float: right;
   margin-top: 20px;
+  padding-bottom: 18px;
 }
 
 nav li {
-  font-size: 1.5rem;
+  font-family: 'Rock Salt','Open Sans', sans-serif;
+  font-size: 1rem;
   float: left;
-  margin-top: 40px;
-  margin-left: 40px;
+  margin-top: 30px;
+  margin-left: 30px;
   list-style-type: none;
+}
+
+nav li:first-child {
+  color: #AE2012;
+  margin-left: 5px;
 }
 
 nav a {
@@ -70,7 +114,7 @@ nav a {
 }
 
 nav a:hover {
-  color: #9398cf;
+  color: #AE2012;
 }
 
 nav a.current {
@@ -80,16 +124,23 @@ nav a.current {
 }
 
 #wrapper {
-  margin: 20px auto;
+  margin: 0px auto;
   max-width: 1000px;
   overflow: hidden;
 }
 
+#background-img {
+  padding: 15vh;
+  background: url('../images/background.jpg') no-repeat center center fixed;  
+  background-size: cover;
+}
+
 main {
   width: 62%;
-  background: #9398cf;
+  background: rgba(23, 23, 23,0.85);
   float: left;
   margin-bottom: 20px;
+  color:#f5f5f5;
 }
 
 main.index {
@@ -99,17 +150,23 @@ main.index {
   float: none;
 }
 
+main.index p {
+  margin: 10px auto;
+  max-width: 60ch;
+}
+
 main.thx {
   width: 90%;
   margin: 20px auto;
   padding: 30px;
   float: none;
   height: 200px;
+  text-align: center;
 }
 
 main.venue-main {
   font: 1.3em;
-  padding:13px;
+  padding: 13px;
   line-height: 1.3;
 }
 
@@ -121,15 +178,33 @@ main.venue-main li {
   list-style: none;
 }
 
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px;
+  height: 0;
+  overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
 /* table Start */
 table {
-  border:2px solid #645394;
-  border-collapse:collapse;
+  
+  border-collapse: collapse;
   margin: 0 auto;
 }
 
 td {
-  border:2px solid #645394;
+  
   text-align: center;
   padding: 5px;
 }
@@ -141,11 +216,12 @@ h2,
 h3,
 h4 {
   margin: 16px 0;
+
 }
 
 .center {
   text-align: center;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
 }
 
 section {
@@ -159,13 +235,19 @@ p {
 
 aside {
   width: 35%;
-  background: gainsboro;
+  background: rgba(23, 23, 23,0.85);
   float: right;
   padding: 5px 12px;
+  color:#f5f5f5;
 }
 
 aside ul {
   margin-left: 25px;
+}
+
+aside li {
+  list-style-type: circle;
+  line-height: 1.5;
 }
 
 aside h3 {
@@ -173,38 +255,43 @@ aside h3 {
   margin-bottom: 0;
 }
 
-aside.venue-aside img {
-  max-width:320px;
-}
-
 /* form styles */
 main.form {
-  width:95%;
+  width: 70%;
   margin: 0 auto;
   float: none;
+  padding: 1px 0;
+}
+
+main.index .img-container {
+  margin: 0 auto;
+  max-width: 500px;
 }
 
 form {
-  max-width:400px;
-  margin:20px auto;
+  max-width: 400px;
+  margin: 20px auto;
 }
 
 fieldset {
-  border: 1px solid purple;
   padding: 10px;
+  border: 0;
+
 }
 
 label {
-  display:block;
-  margin-bottom:5px;
+  display: block;
+  margin-bottom: 5px;
   font-weight: bold;
   font-size: 1.2em;
 }
 
-input[type=submit] {
+input[type='submit'] {
   display: block;
 }
-input[type=text],input[type=email],input[type=tel] {
+input[type='text'],
+input[type='email'],
+input[type='tel'] {
   display: block;
   height: 30px;
   width: 100%;
@@ -218,7 +305,7 @@ form p {
 
 .error {
   display: block;
-  color: red;
+  color: #AE2012;
   margin-bottom: 8px;
   font-style: italic;
 }
@@ -229,7 +316,8 @@ form ul {
   margin-bottom: 10px;
 }
 
-select, textarea {
+select,
+textarea {
   margin-bottom: 10px;
 }
 
@@ -241,15 +329,14 @@ textarea {
 
 /* form styles end */
 
-fieldset.register input,fieldset.login input {
+fieldset.register input,
+fieldset.login input {
   width: 100%;
   height: 30px;
-  margin-bottom: 10px;
 }
 
-
 footer {
-  background: #22223b;
+  /* background: rgb(23, 23, 23); */
 }
 
 footer ul {
@@ -261,7 +348,7 @@ footer ul {
 }
 
 footer li {
-  font-size: 1.2rem;
+  font-size: 1rem;
   list-style-type: none;
   color: #f2e9e4;
   padding: 10px 8px;
@@ -269,4 +356,98 @@ footer li {
 
 footer li a {
   color: #f2e9e4;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 871px)  {
+  header {
+    padding: 20px;
+  }
+
+  #logo {
+    float: none;
+  }
+
+  nav li:first-child {
+    margin-left: 20px;
+  }
+
+  nav ul {
+    float: none;
+  }
+
+  #wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #wrapper h2, #wrapper h3 {
+    text-align: center;
+  }
+
+  #background-img {
+    padding: 0;
+  }
+
+  main {
+    width:90%;
+  }
+
+  main.venue-main p {
+    max-width: 60ch;
+  }
+
+  section p {
+    max-width: 60ch;
+    margin: 15px auto;
+  }
+
+  aside {
+    width: 90%;
+  }
+
+  aside.venue-aside div.img {
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  aside ul {
+    font-size: 1.2em;
+    padding: 10px;
+  }
+
+
+  main.form {
+    width: 85%;
+  }
+
+}
+
+@media only screen and (max-width: 481px)  {
+
+  main {
+    width: 100%;
+  }
+
+  aside {
+    width: 100%;
+  }
+
+  main.index {
+    width: 100%;
+  }
+
+  main.index td {
+    padding: 1px;
+  }
+
+  main.form {
+    width: 100%;
+  }
+
+  main.form form {
+    padding: 10px;
+  }
+
 }

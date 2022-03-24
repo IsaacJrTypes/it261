@@ -63,8 +63,9 @@ include('./includes/header.php');
 
     <aside class="venue-aside">
         <h2>Picture of the venue</h2>
+        <div class="img">
         <img src="./images/<?=$image_path?>" alt="Image of <?=$name?>">
-           
+        </div>
     </aside>
 
 </div><!-- End of wrapper -->

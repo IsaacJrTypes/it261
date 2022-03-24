@@ -2,15 +2,16 @@
 //index page -> show session_start()
 session_start();
 include('config.php');
+include('./includes/form.php');
 include('./includes/header.php');
 ?>
 
 <div id="wrapper">
     <!-- End hero -->
     <main class="form">
+    <h1 class="center"><?=$headline?></h1>
     <form action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']);?>" method="post">
     <fieldset>
-    <legend>Contact me about your favorite venue!</legend>
     
     <label>First Name</label>
     <input type="text" name="fname" value="<?php if(isset($_POST['fname'])) echo htmlspecialchars($_POST['fname']);?>">
@@ -41,7 +42,7 @@ include('./includes/header.php');
     <input type="tel" name="phone" placeholder="xxx-xxx-xxxx" value="<?php if(isset($_POST['phone'])) echo htmlspecialchars($_POST['phone']);?>">
     <span class="error"><?= $phoneErr?></span>
 
-    <label>Favorite Venue </label>
+    <label>Favorite Seattle Venue</label>
     
     <ul>
         <li><input type="checkbox" name="venue[]" value="showbox" <?php if(isset($_POST['venue'])&& in_array('showbox', $venue)) echo 'checked = "checked" ' ?> > Showbox at The Market</li>
@@ -61,7 +62,7 @@ include('./includes/header.php');
 
     <span class="error"><?= $venueErr?></span>
 
-    <label>What U.S. region are you visiting from?</label>
+    <label>What U.S. region are you originally from?</label>
     <select name="regions">
     <option value="" NULL <?php if(isset($_POST['regions'])&& $_POST['regions'] == NULL) echo 'selected = "unselected" ';?> >Select one</option>
 
@@ -74,6 +75,8 @@ include('./includes/header.php');
     <option value="ne" <?php if(isset($_POST['regions'])&& $_POST['regions'] == 'ne') echo 'selected = "selected" ';?> >North East</option>
     
     <option value="south" <?php if(isset($_POST['regions'])&& $_POST['regions'] == 'south') echo 'selected = "selected" ';?> >South</option>
+
+    <option value="other" <?php if(isset($_POST['regions'])&& $_POST['regions'] == 'other') echo 'selected = "selected" ';?> >Not from the US</option>
 
     </select>
     <span class="error"><?= $regionsErr?></span>
@@ -91,7 +94,6 @@ include('./includes/header.php');
 
     <input type="submit" value="Send it!">
     </fieldset>
-    <p><a href="">Reset</a></p>
     </form>
 
     </main>

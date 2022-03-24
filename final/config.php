@@ -25,9 +25,9 @@ function myError($myFile, $myLine, $errorMsg) {
 //php for page switch
 switch(THIS_PAGE) {
     case 'index.php':
-        $title = 'Concert Home Page';
+        $title = 'Home Page';
         $body = '';
-        $headline = 'Welcome to my final project!';
+        $headline = 'A Tribute Website on Seattle\'s Music Scene';
         break;
     case 'daily.php':
         $title = 'Artist Of The Day';
@@ -37,16 +37,16 @@ switch(THIS_PAGE) {
     case 'about.php':
         $title = 'About Our Screenshots';
         $body = '';
-        $headline = 'Screenshot on our concert venue database';
+        $headline = 'Screenshot of Venues Database';
         break;
     case 'register.php':
         $title = 'Register Today!';
-        $body = '';
+        $body = 'login';
         $headline = 'Register Today!';
         break;
     case 'login.php':
         $title = 'Login Today!';
-        $body = '';
+        $body = 'login';
         $headline = 'Login Page';
         break;
     case 'venues.php':
@@ -60,7 +60,7 @@ switch(THIS_PAGE) {
     case 'contact.php':
         $title = 'Contact Page';
         $body = '';
-        $headline = 'Submit and vote for your favorite venue';
+        $headline = 'Vote for your favorite venue';
         break;
 }
 
@@ -74,53 +74,46 @@ if (isset($_GET['today'])) {
 // switch content
 switch($today) {
     case 'Sunday':
-        $artist = '';
-        $hometown = '';
-        $pic = '';
-        $content = '';
+        $artist = 'Nirvana';
+        $video = '<iframe width="560" height="315" src="https://www.youtube.com/embed/z9LiPuVRyU8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        $content = 'Characterized by their punk aesthetic, Nirvana\'s fusion of pop melodies with noise, combined with their themes of abjection and social alienation, brought them global popularity. Following extensive tours and the 1992 compilation album Incesticide and EP Hormoaning, the band released their highly anticipated third studio album, In Utero (1993). The album topped both the US and UK album charts, and was acclaimed by critics. Nirvana disbanded following Cobain\'s suicide in April 1994. Various posthumous releases have been overseen by Novoselic, Grohl, and Cobain\'s widow Courtney Love. The posthumous live album MTV Unplugged in New York (1994) won Best Alternative Music Performance at the 1996 Grammy Awards.';
         break;
     case 'Monday':
-        $artist = '';
-        $hometown = '';
-        $pic = '';
-        $content = '';
+        $artist = 'Jimi Hendrix';
+        $video = '<iframe width="560" height="315" src="https://www.youtube.com/embed/OzlN0Guvous?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        $content = 'Hendrix was inspired by American rock and roll and electric blues. He favored overdriven amplifiers with high volume and gain, and was instrumental in popularizing the previously undesirable sounds caused by guitar amplifier feedback. He was also one of the first guitarists to make extensive use of tone-altering effects units in mainstream rock, such as fuzz distortion, Octavia, wah-wah, and Uni-Vibe. He was the first musician to use stereophonic phasing effects in recordings. Holly George-Warren of Rolling Stone commented: "Hendrix pioneered the use of the instrument as an electronic sound source. Players before him had experimented with feedback and distortion, but Hendrix turned those effects and others into a controlled, fluid vocabulary every bit as personal as the blues with which he began."';
         break;
-    case ' Tuesday':
-        $artist = '';
-        $hometown = '';
-        $pic = '';
-        $content = '';
+    case 'Tuesday':
+        $artist = 'Shabazz Palaces';
+        $video = '<iframe width="560" height="315" src="https://www.youtube.com/embed/7liGwmBuRL0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        $content = 'Ishmael Butler (Group lead) notes that the work of Shabazz Palaces differs from his previous work stylistically. He cites his primary influences as "abstract", pulling from podcasts and mixtapes. Butler attributes the use of African percussion and jazz overtones to his family\'s musical preferences.';
         break;
     case 'Wednesday':
-        $artist = '';
-        $hometown = '';
-        $pic = '';
-        $content = '';
+        $artist = 'Quincy Jones';
+        $video = '<iframe width="560" height="315" src="https://www.youtube.com/embed/Y7v5liq0XcU?start=4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        $content = 'Jones came to prominence in the 1950s as a jazz arranger and conductor before working on pop music and film scores. In 1968, Jones became the first African American to be nominated for an Academy Award for Best Original Song for "The Eyes of Love" from the film Banning. Jones was also nominated for an Academy Award for Best Original Score for his work on the 1967 film In Cold Blood, making him the first African American to be nominated twice in the same year. Jones produced three of Michael Jackson\'s most successful albums: Off the Wall (1979), Thriller (1982), and Bad (1987). In 1985, Jones produced and conducted the charity song "We Are the World", which raised funds for victims of famine in Ethiopia.';
         break;
     case 'Thursday':
-        $artist = '';
-        $hometown = '';
-        $pic = '';
-        $content = '';
+        $artist = 'Pearl Jam';
+        $video = '<iframe width="560" height="315" src="https://www.youtube.com/embed/CxKWTzr-k6s" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        $content = 'Compared with the other grunge bands of the early 1990s, Pearl Jam\'s style is noticeably less heavy and harkens back to the classic rock music of the 1970s. Pearl Jam has cited many punk rock and classic rock bands as influences, including The Who, Led Zeppelin, Neil Young, Kiss and the Ramones. Pearl Jam\'s success has been attributed to its sound, which fuses "the riff-heavy stadium rock of the \'70s with the grit and anger of \'80s post-punk, without ever neglecting hooks and choruses." Gossard\'s rhythm guitar style is known for its sense of beat and groove, while McCready\'s lead guitar style, influenced by artists such as Jimi Hendrix, has been described as "feel-oriented" and "rootsy.';
         break;
     case 'Friday':
-        $artist = '';
-        $hometown = '';
-        $pic = '';
-        $content = '';
+        $artist = 'Foo Fighters';
+        $video = '<iframe width="560" height="315" src="https://www.youtube.com/embed/EqWRaAF6_WY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        $content = 'Foo Fighters have been described as grunge, alternative rock, post-grunge, hard rock, and pop-rock. They were initially compared to Grohl\'s previous group, Nirvana. Grohl acknowledged that Kurt Cobain was an influence on his songwriting: "Through Kurt, I saw the beauty of minimalism and the importance of music that\'s stripped down." Foo Fighters also used the technique of shifting between quiet verses and loud choruses, which Grohl said was influenced by the members of Nirvana "liking The Knack, Bay City Rollers, Beatles, and ABBA as much as we liked Flipper and Black Flag, I suppose." ';
         break;
     case 'Saturday':
-        $artist = '';
-        $hometown = '';
-        $pic = '';
-        $content = '';
+        $artist = 'Soundgarden';
+        $video = '<iframe width="560" height="315" src="https://www.youtube.com/embed/O3APMu6zIiM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
+        $content = 'Soundgarden were pioneers of the grunge music genre, which mixed elements of punk rock and metal to make a sludgy, murky sound through the use of fuzzy-sounding distortion in the guitars. "Soundgarden are quite good..." remarked Black Sabbath\'s Tony Iommi, "It\'s very much like the same sort of stuff that we would have done." Soundgarden\'s sound during the early years of the Seattle grunge scene has been described as consisting of "gnarled neo-Zeppelinisms". The influence of Led Zeppelin was evident, with Q magazine noting that Soundgarden were "in thrall to \'70s rock, but contemptuous of the genre\'s overt sexism and machismo." According to Sub Pop, the band had "a hunky lead singer and fused Led Zeppelin and the Butthole Surfers". The Butthole Surfers\' mix of punk, heavy metal and noise rock was a major influence on the early work of Soundgarden. The band was also influenced by the likes of the Ramones, Kiss, Accept, the Melvins and Saint Vitus. ';
         break;
 }
 
 //nav assoc list
 $nav['index.php'] = 'Home';
 $nav['about.php'] = 'About';
-$nav['daily.php'] = 'Switch';
+$nav['daily.php'] = 'Daily';
 $nav['venues.php'] = 'Venues';
 $nav['contact.php'] = 'Contact';
 
@@ -137,138 +130,5 @@ function make_links($nav) {
     return $my_return;
 }
 
-/* Contact Page */
-$email = '';
-$comments = '';
-$fname = '';
-$lname = '';
-$visitor = '';
-$venue = '';
-$regions = '';
-$privacy = '';
-
-$fNameErr = '';
-$lNameErr = '';
-$emailErr = '';
-$visitorErr = '';
-$phoneErr = '';
-$venueErr = '';
-$regionsErr = '';
-$commentsErr = '';
-$privacyErr = '';
-
-if($_SERVER['REQUEST_METHOD'] == 'POST') {
-
-    if(empty($_POST['fname'])) {
-        $fNameErr = 'Please enter your first name';
-    } else {
-        $fname = $_POST['fname'];
-    }
-
-    if(empty($_POST['lname'])) {
-        $lNameErr = 'Please enter your last name';
-    } else {
-        $lname = $_POST['lname'];
-    }
-
-    if(empty($_POST['email'])) {
-        $emailErr = 'Please enter your Email';
-    } else {
-        $email = $_POST['email'];
-    }
-
-    if(empty($_POST['visitor'])) {
-        $visitorErr = 'Please choose the type of visitor';
-    } else {
-        $visitor = $_POST['visitor'];
-    }
-
-    if(empty($_POST['phone'])) { // if empty, type in your number
-    $phoneErr = 'Your phone number please!';
-    } elseif(array_key_exists('phone', $_POST)){
-    if(!preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone']))
-    { // if you are not typing the requested format of xxx-xxx-xxxx, display Invalid format
-    $phoneErr = 'Invalid format!';
-    } else{
-    $phone = $_POST['phone'];
-    } // end else
-    } // end main if
-
-    if(empty($_POST['venue'])) {
-        $venueErr = 'Please choose atleast one venue';
-    } else {
-        $venue = $_POST['venue'];
-    }
-
-    if($_POST['regions'] == NULL) {
-        $regionsErr = 'Please select your region';
-    } else {
-        $regions = $_POST['regions'];
-    }
-
-    if(empty($_POST['comments'])) {
-        $commentsErr = 'Your comments, please!!';
-    } else {
-        $comments = $_POST['comments'];
-    }
-
-    if(empty($_POST['privacy'])) {
-        $privacyErr = 'You cannot pass go!';
-    } else {
-        $privacy = $_POST['privacy'];
-    }
-
-    //our venue function
-    function venue($venue) {
-        $my_return = '';
-        if(!empty($_POST['venue'])) {
-            $my_return = implode(', ', $_POST['venue']);
-        } else {
-            $venueErr = 'Select atleast 1 programming language';
-        }
-        return $my_return;
-    }//end venue function
-
-    if(isset($_POST['fname'],
-             $_POST['lname'],
-             $_POST['email'],
-             $_POST['visitor'],
-             $_POST['phone'],
-             $_POST['regions'],
-             $_POST['venue'],
-             $_POST['comments'],
-             $_POST['privacy'])) {
-    $to = 'duckhunterjr@gmail.com';
-    $subject = 'Test email '.date('m/d/y, h i A');
-    $body = '
-    First Name: '.$fname.' '.PHP_EOL.'
-    Last Name: '.$lname.' '.PHP_EOL.'
-    Email: '.$email.' '.PHP_EOL.'
-    visitor: '.$visitor.' '.PHP_EOL.'
-    Phone Number: '.$phone.' '.PHP_EOL.'
-    Regions: '.$regions.' '.PHP_EOL.'
-    venue: '.venue($venue).' '.PHP_EOL.'
-    Comments: '.$comments.' '.PHP_EOL.'
-    ';
-
-        if(!empty($fname&&
-                $lname&&
-                $visitor&&
-                $venue&&
-                $regions&&
-                $email&&
-                $phone&&
-                $comments&&
-                $privacy)&&preg_match('/^[0-9]{3}-[0-9]{3}-[0-9]{4}$/', $_POST['phone'])) {
-            $headers = array(
-            'From'=> 'no-reply@studentswa.com',
-            'Reply to:'=>''.$email.'');
-
-            mail($to,$subject,$body,$headers);
-            header('Location:thx.php');
-        }//close if !empty
-    }//close isset
-
-}// END server request
 
 ?>

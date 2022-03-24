@@ -11,11 +11,14 @@ include('./includes/header.php');
     
     <main class="index">
         <h1 class="center"><?=$headline?></h1>
-        <p>Lorem ipsum dolor sit amet consectetur 
-        Recusandae dolor molestiae ipsum voluptate deserunt quis, suscipit perferendis veritatis voluptatem, modi, corrupti pariatur totam similique consequuntur accusantium optio esse adipisci quae unde consequatur minima expedita quod neque accusamus? Maiores.
-        Doloribus, maiores! Itaque, error ex sint illo ut eius dolor nemo molestias veniam, ab id quisquam est odio eaque blanditiis. Nesciunt ipsum enim adipisci. Laborum exercitationem sit a ut aperiam?
-        </p>
-
+        <div class="img-container">
+        <img src="./images/guitarist.jpg" alt="silhouette of a guitar player">
+        </div>
+        
+        <p>Seattle has changed extensively in the past few years. There are moments when I cannot recognize my hometown. One thing that hasn’t changed, is the musical influence this city has had on the world. </p>
+        <p>The various musical venues throughout the city have given local musicians a platform to express themselves. A platform for people to connect with the city’s history through music.  This website is a tribute to Seattle’s storied music scene.</p>
+        
+        
     </main>
 </div><!-- End wrapper -->
 <?php include('./includes/footer.php');?>
