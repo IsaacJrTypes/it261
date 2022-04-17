@@ -8,4 +8,5 @@ Note: <br>
 Final files are not optimized <br>
 Use User: guest <br>
 Password: 1234 <br>
-Database capped at 50 reg users
+Database capped at 50 reg users <br>
+*Art assets sourced from Creative Common websites*
